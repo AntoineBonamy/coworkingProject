@@ -12,13 +12,20 @@
 .map-info {
     line-height: 2;
     max-width: 80%;
-    margin: auto;
+    margin: 10px auto;
+    border-radius: 10%;
 }
 
-@media screen and (min-width: 820px) {
+ul {
+    margin-left: 15px;
+}
+
+@media screen and (min-width: 900px) {
     .map-section {
         display: flex;
-        justify-content: space-between;
-        padding-right: 20px;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto auto;
+
     }
 }
