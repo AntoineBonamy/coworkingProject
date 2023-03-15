@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project #1</title>
     <link rel="shortcut icon" type="image/jpg" href="favicon.png" />
     <!-- ici charger les fichiers de tous le mondes ex: contact.css contact.js -->
@@ -16,8 +15,6 @@
     <link rel="stylesheet" href="map/map.css" />
     <link rel="stylesheet" href="prices/prices.css" />
     <link rel="stylesheet" href="style.css" />
-
-
 </head>
 
 <body>
@@ -30,38 +27,77 @@
         <div id="blocs-introduction"></div>
         <div id="blocs-carousel"></div>
         <div id="blocs-perks"></div>
-        <div id="blocs-prices"></div>
-        <div id="blocs-map"></div>
         <div id="blocs-contact"></div>
-        <div id="blocs-footer"></div>
+
     </div>
     <!-- section caroussel -->
 
     <!-- section tarif -->
+    <div id="blocs-prices">
+    <section id="prices-and-formula">
+      <h1>Tarifs et formules</h1>
+      <div id="prices-meeting-room">
+        <div id="prices-meeting-room-text-and-button">
+          <h2>Salle de réunion</h2>
+          <p>(1 place)</p>
+          <p>Tarif journalier : 30 €</p>
+          <button class="prices-button-selection" type="button">
+            Sélectionner
+          </button>
+        </div>
+        <div id="prices-meeting-room-picture">
+          <img class ="meeting-room-picture" src="assets/meeting-room.jpg" alt="meeting room picture" />
+        </div>
+      </div>
 
-    <!-- section map -->
-    <section class="map-section">
-        <div class="map-container">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d537.7856734745254!2d-1.547760093787276!3d47.211302751940785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805eeb04e035b03%3A0xfe166fb643fd3846!2s4%20Rue%20Baron%2C%2044000%20Nantes!5e0!3m2!1sfr!2sfr!4v1678872845942!5m2!1sfr!2sfr"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div id="prices-cosy-room">
+        <div id="prices-cosy-room-text-and-button">
+          <h2>Salle cosy</h2>
+          <p>(1 place)</p>
+          <p>Tarif journalier : 50 €</p>
+          <button class="prices-button-selection" type="button">
+            Sélectionner
+          </button>
         </div>
-        <div class="map-info">
-            <h3>Retrouvez nous : </h3>
-            <ul>
-                <li>4 rue Baron 44000 Nantes</li>
-                <li>Parking à proximité</li>
-                <li>Accès vélo</li>
-                <li>Bus & Tram</li>
-            </ul>
-            <img src="" alt="tram-bus-info">
+        <div id="prices-cosy-room-picture">
+          <img src="assets/cosy-room.jpg" alt="cosy room picture" />
         </div>
+      </div>
+
+      <div id="prices-personal-desk">
+        <div id="prices-personal-desk-text-and-button">
+          <h2>Bureau personnel</h2>
+          <p>(1 place)</p>
+          <p>Tarif journalier : 100 €</p>
+          <button class="prices-button-selection" type="button">
+            Sélectionner
+          </button>
+        </div>
+        <div id="prices-personal-desk-picture">
+          <img src="assets/personal-desk.jpg" alt="personal desk picture" />
+        </div>
+      </div>
     </section>
-
-
-
-
+  </div>
+    <!-- section map -->
+    <div id="blocs-map">
+        <section class="map-section">
+            <div class="map-container">
+                <iframe id="map-interface" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d537.7856734745254!2d-1.547760093787276!3d47.211302751940785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805eeb04e035b03%3A0xfe166fb643fd3846!2s4%20Rue%20Baron%2C%2044000%20Nantes!5e0!3m2!1sfr!2sfr!4v1678872845942!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="map-info">
+                <h2>Retrouvez nous : </h2>
+                <ul>
+                    <li>4 rue Baron 44000 Nantes</li>
+                    <li>Parking à proximité</li>
+                    <li>Accès vélo</li>
+                    <li>Bus & Tram</li>
+                </ul>
+                <img src="./assets/bus et tram.png" alt="tram-bus-info">
+            </div>
+        </section>
+    </div>
+    
     <!-- section contact  -->
     <section class="contact">
         <div class="form-name">
@@ -84,12 +120,29 @@
         </div>
     </section>
     <!-- section footer  -->
+    <div id="blocs-footer">
+        <section id="footer-container">
+            <a href="https://m.facebook.com/" id="facebook-button">
+                <img src="/assets/facebook.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/" id="instagram-button">
+                <img src="/assets/instagram.png" alt="">
+            </a>
+            <a href="https://twitter.com/" id="twitter-button">
+                <img src="/assets/twitter.png" alt="">
+            </a>
+            <a href="https://fr.linkedin.com/" id="linkedin-button">
+                <img src="/assets/linkedin.png" alt="">
+            </a>
+            
+        </section>
+    </div>
+    
     <script type="text/javascript" src="footer/footer.js"></script>
     <script type="text/javascript" src="header/header.js"></script>
     <script type="text/javascript" src="map/map.js"></script>
     <script type="text/javascript" src="prices/prices.js"></script>
     <script type="text/javascript" src="contact/contact.js"></script>
     <script type="text/javascript" src="carousel/carousel.js"></script>
-</body>
-
+  </body>
 </html>
