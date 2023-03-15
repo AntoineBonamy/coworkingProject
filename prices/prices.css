@@ -1,0 +1,49 @@
+/*le style des titres et du texte sont appliqués depuis le fichier CSS root. Ne coder ici que les spécifités de la section Tarifs et formules*/
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 7px;
+}
+button {
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 7px;
+}
+#prices-meeting-room {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+#prices-meeting-room-text-and-button {
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+  align-self: center;
+}
+#prices-cosy-room {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+#prices-cosy-room-text-and-button {
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+  align-self: center;
+}
+#prices-personal-desk {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+#prices-personal-desk-text-and-button {
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+  align-self: center;
+}
