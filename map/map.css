@@ -1,0 +1,28 @@
+.map-section {
+    margin: 0 auto;
+
+}
+
+.map-container {
+    display: flex;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.map-info {
+    line-height: 2;
+    max-width: 80%;
+    padding: 20% auto;
+}
+
+.map-info ul li {
+    padding-left: 20px;
+}
+
+@media screen and (min-width: 820px) {
+    .map-section {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 20px;
+    }
+}
