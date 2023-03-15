@@ -1,5 +1,5 @@
 .map-section {
-    margin: 0 auto;
+    margin: 5px auto;
 
 }
 
@@ -12,11 +12,7 @@
 .map-info {
     line-height: 2;
     max-width: 80%;
-    padding: 20% auto;
-}
-
-.map-info ul li {
-    padding-left: 20px;
+    margin: auto;
 }
 
 @media screen and (min-width: 820px) {
