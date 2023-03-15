@@ -11,9 +11,9 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
-    /* background-color: blue; */
-
 }
+
+
 
 #blocs-header {
     display: flex;
@@ -96,11 +96,6 @@
     height: 100px;
 }
 
-#blocs-prices {
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-}
-
 #blocs-contact {
     background-color: rgb(89, 61, 167);
     width: 100%;
@@ -108,8 +103,10 @@
 }
 
 #blocs-footer {
+    background-color: rgb(167, 167, 167);
     width: 100%;
     height: 40px;
+    padding-top: 5px;
 }
 
 #blocs-carousel {
