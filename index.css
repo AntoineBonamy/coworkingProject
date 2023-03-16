@@ -1,19 +1,6 @@
+
   .icons {
     display: flex;
   }
 
-  .icons .col {
-    padding: 0 65px;
-    text-align: center;
-    font-size: 1.3em;
-    cursor: pointer;
-  }
 
-  .icons .col i {
-    margin-bottom: 25px;
-    font-size: 1.5em;
-  }
-
-  .icons .col div {
-    font-family: Arial, Helvetica, sans-serif;
-  }
