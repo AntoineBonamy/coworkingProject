@@ -1,3 +1,9 @@
+#blocs-footer {
+    margin-top: 20px;
+    
+    background-color: rgb(240, 230, 220);
+}
+
 #rs-container {
     display: flex;
     justify-content: end;
@@ -12,11 +18,18 @@
 
 .footer-contact ul, .footer-adress ul {
     list-style-type: none;
+    margin: 0;
 }
 
 #footer-info {
     display: flex;
     justify-content: space-around;
     line-height: 1.5;
+    font-size: 12px;
 
+}
+
+#footer-info h3 {
+    font-size: 16px;
+    padding-bottom: 5px;
 }
