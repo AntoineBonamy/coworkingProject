@@ -118,6 +118,7 @@
 .icons {
     display: flex;
     flex-wrap: wrap;
+    
   }
 
   .icons .col {
@@ -125,10 +126,14 @@
     text-align: center;
     font-size: 1.3em;
     cursor: pointer;
+    position: relative;
   }
+ 
 
   .icons .col i {
-    margin-bottom: 25px;
+    position: absolute;
+ 
+  
     font-size: 1.5em;
   }
 
