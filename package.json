@@ -1,0 +1,19 @@
+{
+  "name": "coworkingproject",
+  "version": "1.0.0",
+  "description": "Our first project in common at the Wild Code School",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elindanova/coworkingProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Elindanova/coworkingProject/issues"
+  },
+  "homepage": "https://github.com/Elindanova/coworkingProject#readme"
+}

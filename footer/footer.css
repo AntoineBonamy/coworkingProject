@@ -1,4 +1,4 @@
-#footer-container {
+#rs-container {
     display: flex;
     justify-content: end;
     align-items: end;
@@ -6,6 +6,17 @@
     padding: 10px 15px 10px 0;
 }
 
-#footer-container a:hover {
+#rs-container a:hover {
     opacity: 0.5;
+}
+
+.footer-contact ul, .footer-adress ul {
+    list-style-type: none;
+}
+
+#footer-info {
+    display: flex;
+    justify-content: space-around;
+    line-height: 1.5;
+
 }
