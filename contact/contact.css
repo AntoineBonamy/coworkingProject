@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.name-form {
+    margin-left: 60px;
+    margin-bottom: 15px;
+}
+
+.form {
+    background-image: url("./form.jpg");
+    width: 365px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
