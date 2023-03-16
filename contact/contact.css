@@ -29,8 +29,8 @@
 .contact-form-fields textarea {
     padding: 10px 10px;
     border-radius: 5px;
-    border: none;
-
+    border: 0;
+    margin: 5px 0;
 
 }
 
@@ -38,11 +38,12 @@
     height: 85px;
 }
 
-#submit {
+.contact-form-fields button {
     background-color: #163ee0;
     color: #ffffff;
     width: 120px;
-    margin: auto;
+    border: 0;
+    margin: 25px auto 0;
 
 
 }
