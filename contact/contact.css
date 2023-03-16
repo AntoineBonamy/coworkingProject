@@ -29,6 +29,8 @@
 .contact-form-fields textarea {
     padding: 10px 10px;
     border-radius: 5px;
+    box-shadow: none;
+
 
 }
 
