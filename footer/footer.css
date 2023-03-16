@@ -1,7 +1,7 @@
 #blocs-footer {
     margin-top: 20px;
     background-color: rgb(240, 230, 220);
-    min-height: 190px;
+    min-height: 200px;
 }
 
 #rs-container {
@@ -32,4 +32,11 @@
 #footer-info h3 {
     font-size: 16px;
     padding-bottom: 5px;
+}
+
+#footer-barr {
+    background-color: black;
+    height: 1px;
+    max-width: 80%;
+    margin: auto 10% auto 10%;
 }
