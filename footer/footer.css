@@ -1,6 +1,7 @@
 #blocs-footer {
     margin-top: 20px;
     background-color: rgb(240, 230, 220);
+    min-height: 190px;
 }
 
 #rs-container {
@@ -12,7 +13,7 @@
 }
 
 #rs-container a:hover {
-    opacity: 0.5;
+    transform: scale(1.3);
 }
 
 .footer-contact ul, .footer-adress ul {
