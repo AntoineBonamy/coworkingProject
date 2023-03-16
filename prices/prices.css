@@ -1,9 +1,10 @@
 /*le style des titres et du texte sont appliqués depuis le fichier CSS root. Ne coder ici que les spécifités de la section Tarifs et formules*/
+
 #prices-meeting-room {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 5%;
 }
 #prices-meeting-room-picture {
   display: flex;
@@ -14,52 +15,55 @@
 #prices-personal-desk-picture {
   display: flex;
 }
-
 img {
   max-width: 100%;
   max-height: 100%;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-  border-radius: 7px;
+  border-radius: 5px;
   align-self: center;
 }
 
 button {
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-  border-radius: 4px;
-  margin-top: 15px;
-  padding: 10px 25px 10px 25px;
-  background-color: #163fe0;
-  color: white;
   border: none;
+  padding: 12px 15px;
+  border-radius: 24px;
+  font-size: 12px;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  margin-top: 7px;
 }
 
 #prices-meeting-room-text-and-button {
   display: flex;
   flex-direction: column;
-  padding: 10%;
+  padding: 0 5% 0 15%;
   align-self: center;
+  gap: 5px;
 }
+
 #prices-cosy-room {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
-  margin-bottom: 10px;
+  margin-bottom: 5%;
 }
 #prices-cosy-room-text-and-button {
   display: flex;
   flex-direction: column;
-  padding: 10%;
+  padding: 0 5% 0 15%;
   align-self: center;
+  gap: 5px;
 }
 #prices-personal-desk {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
-  margin-bottom: 10px;
+  margin-bottom: 5%;
 }
 #prices-personal-desk-text-and-button {
   display: flex;
   flex-direction: column;
-  padding: 10%;
+  padding: 0 5% 0 15%;
   align-self: center;
+  gap: 5px;
 }
