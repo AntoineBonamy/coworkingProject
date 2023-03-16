@@ -134,6 +134,7 @@ h1 {
 
 .icons {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .icons .col {
