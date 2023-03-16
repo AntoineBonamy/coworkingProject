@@ -15,14 +15,21 @@
     <link rel="stylesheet" href="map/map.css" />
     <link rel="stylesheet" href="prices/prices.css" />
     <link rel="stylesheet" href="style.css" />
-  </head>
+    <script src="https://kit.fontawesome.com/f112ae9e24.js" crossorigin="anonymous"></script>
+</head>
 
   <body>
     <!-- section header -->
     <div id="bloc-container">
-      <div id="blocs-header">
-        <div id="header-top">
-          <div id="header-top-menu"><i class="fa-solid fa-bars"></i></div>
+        <div id="blocs-header">
+            <div id="header-top">
+                <div id="header-top-menu"><i class="fa-solid fa-bars"></i></div>
+
+                <div id="header-top-cta">
+                    <a href="#" class="myButton">Réserver</a>
+                </div>
+            </div>
+            <div id="header-bot">J & A</div>
 
           <div id="header-top-cta">
             <a href="#" class="myButton">Commander</a>
@@ -31,14 +38,47 @@
         <div id="header-bot">J & A</div>
       </div>
 
-      <div id="blocs-introduction"></div>
-      <div id="blocs-carousel"></div>
-      <div id="blocs-perks"></div>
-      <div id="blocs-contact"></div>
+        <div id="blocs-introduction">
+            <div class="title">
+                <h1>Nos locaux</h1>
+            </div>
+            <div class="text">
+                <p>Bonjour nous sommes Jessica et Arnaud et nous venons d’ouvrir notre espace de coworking Sharing is
+                    caring.
+                    Notre état d’esprit est vraiment orienté vers le bien être au travail et le partage. Nous voulons
+                    que
+                    les
+                    indépendants, personnes en recherche d’emploi se sentent bien ici et puissent échanger afin de créer
+                    un
+                    réseau. Vous trouverez plein de services et de repas maison, préparés avec des produits locaux et
+                    avec
+                    amour
+                    !</p>
+            </div>
+        </div>
+        <div id="blocs-carousel"></div>
+        <div id="blocs-perks"></div>
+        <div id="blocs-contact"></div>
+
     </div>
-    <!-- section caroussel -->
+
+    <!-- section caroussel & icons-->
 
     <!-- Partie 1:  Partie carrousel -->
+
+    <div class="wrapper">
+        <i class="fa-solid fa-angle-left"></i>
+        <div class="carrousel">
+          <img src="photo10.jpg" alt="" srcset="" />
+          <img src="photo3.jpg" alt="" srcset="" />
+          <img src="photo6.jpg" alt="" srcset="" />
+          <img src="photo8.jpg" alt="" srcset="" />
+          <img src="photo3.jpg" alt="" srcset="" />
+        </div>
+        <i class="fa-solid fa-angle-right"></i>
+
+
+
 
     <!-- Partie 2:  Partie des icons -->
     <div class="icons">
@@ -70,8 +110,21 @@
 
     <!-- section tarif -->
     <div id="blocs-prices">
-      <section id="prices-and-formula">
-        <h1>Tarifs et formules</h1>
+        <section id="prices-and-formula">
+            <h1>Tarifs et formules</h1>
+            <div id="prices-meeting-room">
+                <div id="prices-meeting-room-text-and-button">
+                    <h2>Salle de réunion</h2>
+                    <p>(1 place)</p>
+                    <p>Tarif journalier : 30 €</p>
+                    <button class="prices-button-selection" type="button">
+                        Sélectionner
+                    </button>
+                </div>
+                <div id="prices-meeting-room-picture">
+                    <img class="meeting-room-picture" src="assets/meeting-room.jpg" alt="meeting room picture" />
+                </div>
+            </div>
 
         <div id="prices-meeting-room">
           <div id="prices-meeting-room-text-and-button">
@@ -165,7 +218,18 @@
         </form>
       </div>
 
-      <div class="key-figures"></div>
+            <form class="contact-form-fields">
+                <input type="text" id="name" placeholder="Votre Nom" required>
+                <input type="text" id="phone_number" placeholder="Votre Téléphone ">
+                <input type="email" id="email" placeholder="Votre e-mail">
+                <textarea type="text" placeholder="Votre Message"></textarea>
+                <button type="submit"> Envoyer</button>
+            </form>
+
+        </div>
+
+        <div class="key-figures">
+        </div>
     </section>
     <!-- section footer  -->
     <div id="blocs-footer">
