@@ -7,19 +7,19 @@
 #bloc-container {
     display: flex;
     border: 0px solid black;
-    /* height: 500px; */
     width: 100%;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
-    background-color: blue;
-
 }
 
+
+
 #blocs-header {
-    <<<<<<< HEAD display: flex;
+    display: flex;
     flex-direction: column;
     background-image: url(./assets/header.jpg);
+    background-repeat: no-repeat;
     width: 100%;
     height: 20rem;
     color: white;
@@ -40,11 +40,15 @@
 }
 
 #header-top-cta {
+    position: relative;
     padding: 10px 0px 0px 10px;
     width: 50%;
+    /* background-color: rgb(42, 165, 58); */
 }
 
 .myButton {
+    position: absolute;
+    right: 10px;
     box-shadow: 2px 3px 10px -5px #000000;
     background-color: #163ee0;
     border-radius: 7px;
@@ -92,11 +96,6 @@
     height: 100px;
 }
 
-#blocs-prices {
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-}
-
 #blocs-contact {
     background-color: rgb(89, 61, 167);
     width: 100%;
@@ -104,8 +103,10 @@
 }
 
 #blocs-footer {
+    background-color: rgb(167, 167, 167);
     width: 100%;
     height: 40px;
+    padding-top: 5px;
 }
 
 #blocs-carousel {
