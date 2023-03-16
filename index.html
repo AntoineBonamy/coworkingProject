@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="footer/footer.css" />
     <link rel="stylesheet" href="map/map.css" />
     <link rel="stylesheet" href="prices/prices.css" />
+
     <link rel="stylesheet" href="./style.css" />
+
     <script src="https://kit.fontawesome.com/f112ae9e24.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -84,11 +86,12 @@
     <div class="wrapper">
         <i class="fa-solid fa-angle-left"></i>
         <div class="carrousel">
-            <img src="photo10.jpg" alt="" srcset="" />
-            <img src="photo3.jpg" alt="" srcset="" />
-            <img src="photo6.jpg" alt="" srcset="" />
-            <img src="photo8.jpg" alt="" srcset="" />
-            <img src="photo3.jpg" alt="" srcset="" />
+
+          <img src="assets/photo10.jpg" alt="" srcset="" />
+          <img src="assets/photo3.jpg" alt="" srcset="" />
+          <img src="assets/photo6.jpg" alt="" srcset="" />
+          <img src="assets/photo8.jpg" alt="" srcset="" />
+          <img src="assets/photo3.jpg" alt="" srcset="" />
         </div>
         <i class="fa-solid fa-angle-right"></i>
 
@@ -199,7 +202,15 @@
                 <h1>Nous contacter</h1>
             </div>
 
-            <div class="contact-form">
+
+            <form class="contact-form-fields">
+                <input type="text" id="name" placeholder="Votre Nom" required>
+                <input type="text" id="phone_number" placeholder="Votre Téléphone ">
+                <input type="email" id="email" placeholder="Votre e-mail">
+                <textarea type="text" placeholder="Votre Message"></textarea>
+                <button type="submit"> Envoyer</button>
+            </form>
+
 
                 <form class="contact-form-fields">
                     <input type="text" id="name" placeholder="Votre Nom" required>
@@ -209,10 +220,46 @@
                     <input type="submit" id="submit" value="Envoyer">
                 </form>
 
-            </div>
 
-            <div class="key-figures">
-            </div>
+        <div class="key-figures">
+        </div>
+    </section>
+    <!-- section footer -->
+    <div id="blocs-footer">
+        <div id="footer-info">
+            <section class="footer-contact">
+                <h3>Contact</h3>
+                <ul>
+                    <li>Jessica : 03.55.69.26.26</li>
+                    <li>jessica.coworking@gmail.fr</li>
+                    <br>
+                    <li>Arnaud : 05.55.55.55.55</li>
+                    <li>arnaud.coworking@gmail.fr</li>
+                </ul>
+            </section>
+            <section class="footer-adress">
+                <h3>Adresse</h3>
+                <ul>
+                    <li>J&A</li>
+                    <li>4 rue Baron</li>
+                    <li>44000 Nantes</li>
+                </ul>
+            </section>
+        </div>
+        <br>
+        <section id="rs-container">
+            <a href="https://m.facebook.com/" id="facebook-button">
+                <img src="/assets/facebook.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/" id="instagram-button">
+                <img src="/assets/instagram.png" alt="">
+            </a>
+            <a href="https://twitter.com/" id="twitter-button">
+                <img src="/assets/twitter.png" alt="">
+            </a>
+            <a href="https://fr.linkedin.com/" id="linkedin-button">
+                <img src="/assets/linkedin.png" alt="">
+            </a>
         </section>
         <!-- section footer  -->
         <div id="blocs-footer">

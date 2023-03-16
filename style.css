@@ -106,10 +106,10 @@
 }
 
 #blocs-footer {
-  background-color: rgb(167, 167, 167);
-  width: 100%;
-  height: 40px;
-  padding-top: 5px;
+
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
 }
 
 #blocs-carousel {
@@ -117,7 +117,6 @@
   width: 100%;
   height: 100px;
 }
-
 
 h1 {
   font-family: 'Montserrat', sans-serif;
@@ -132,65 +131,67 @@ h1 {
 }
 
 .icons {
-  display: flex;
-}
 
-.icons .col {
-  padding: 0 65px;
-  text-align: center;
-  font-size: 1.3em;
-  cursor: pointer;
-}
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-.icons .col i {
-  margin-bottom: 25px;
-  font-size: 1.5em;
-}
+  .icons .col {
+    padding: 0 65px;
+    text-align: center;
+    font-size: 1.3em;
+    cursor: pointer;
+  }
 
-.icons .col div {
-  font-family: Arial, Helvetica, sans-serif;
-}
+  .icons .col i {
+    margin-bottom: 25px;
+    font-size: 1.5em;
+  }
 
-.wrapper {
-  max-width: 1200px;
-  position: relative;
-}
+  .icons .col div {
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
-.wrapper .carrousel {
-  font-size: 0px;
-  white-space: nowrap;
-  cursor: pointer;
-  overflow: hidden;
-}
+  .wrapper {
+    max-width: 1200px;
+    position: relative;
+  }
 
-.carrousel img {
-  height: 300px;
-  object-fit: cover;
-  width: calc(100% / 3);
-  margin-left: 14px;
-}
+  .wrapper .carrousel {
+    font-size: 0px;
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+  }
 
-.carrousel img:first-child {
-  margin-left: 0px;
-}
+  .carrousel img {
+    height: 300px;
+    object-fit: cover;
+    width: calc(100% / 3);
+    margin-left: 14px;
+  }
 
-.wrapper i {
-  height: 46px;
-  width: 46px;
-  text-align: center;
-  line-height: 46px;
-  background: #fff;
-  border-radius: 50%;
-  font-size: 1.2rem;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
+  .carrousel img:first-child {
+    margin-left: 0px;
+  }
 
-.wrapper i:first-child {
-  left: -23px;
-}
+  .wrapper i {
+    height: 46px;
+    width: 46px;
+    text-align: center;
+    line-height: 46px;
+    background: #fff;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
-.wrapper i:last-child {
-  right: -23px;
-}
+  .wrapper i:first-child {
+    left: -23px;
+  }
+
+  .wrapper i:last-child {
+    right: -23px;
+  }
