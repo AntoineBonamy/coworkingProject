@@ -24,6 +24,9 @@
     height: 20rem;
     color: white;
     font-size: 2em;
+    background-position: center;
+    background-size: cover;
+
 }
 
 #header-top {
@@ -79,9 +82,12 @@
 }
 
 #blocs-introduction {
-    background-color: rgb(167, 146, 61);
+    /* background-color: rgb(167, 146, 61); */
     width: 100%;
-    height: 100px;
+    /* height: 100px; */
+    display: flex;
+    flex-direction: column;
+    /* background-color: dodgerblue; */
 }
 
 #blocs-carousel {
@@ -113,6 +119,19 @@
     background-color: rgb(61, 167, 121);
     width: 100%;
     height: 100px;
+}
+
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px 0 0 10px;
+    font-size: 1.5em;
+}
+
+.text {
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 10px 10px 10px;
+    font-size: 1em;
 }
 
 .icons {
