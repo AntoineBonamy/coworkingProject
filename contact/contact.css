@@ -7,7 +7,7 @@
     background-image: url("../assets/form.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.6;
+    opacity: 0.8;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,11 +29,20 @@
 .contact-form-fields textarea {
     padding: 10px 10px;
     border-radius: 5px;
-    box-shadow: none;
+    border: none;
 
 
 }
 
 .contact-form-fields textarea {
     height: 85px;
+}
+
+#submit {
+    background-color: #163ee0;
+    color: #ffffff;
+    width: 120px;
+    margin: auto;
+
+
 }
