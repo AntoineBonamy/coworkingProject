@@ -88,4 +88,4 @@ lerna-debug.log
 
 # System Files
 .DS_Store
-Thumbs.db
+./assets/.DS_Store

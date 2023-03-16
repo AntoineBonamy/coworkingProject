@@ -1,65 +1,88 @@
 /*le style des titres et du texte sont appliqués depuis le fichier CSS root. Ne coder ici que les spécifités de la section Tarifs et formules*/
-#prices-meeting-room {
+
+/*Style section div carte */
+#prices-meeting-room,
+#prices-cosy-room,
+#prices-personal-desk {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 5%;
+  max-width: 360px;
 }
-#prices-meeting-room-picture {
-  display: flex;
-}
-#prices-cosy-room-picture {
-  display: flex;
-}
+/*Style div image */
+#prices-meeting-room-picture,
+#prices-cosy-room-picture,
 #prices-personal-desk-picture {
   display: flex;
 }
-
 img {
   max-width: 100%;
   max-height: 100%;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-  border-radius: 7px;
+  border-radius: 5px;
   align-self: center;
 }
 
-button {
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-  border-radius: 4px;
-  margin-top: 15px;
-  padding: 10px 25px 10px 25px;
-  background-color: #163fe0;
-  color: white;
-  border: none;
-}
-
-#prices-meeting-room-text-and-button {
-  display: flex;
-  flex-direction: column;
-  padding: 10%;
-  align-self: center;
-}
-#prices-cosy-room {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-  margin-bottom: 10px;
-}
-#prices-cosy-room-text-and-button {
-  display: flex;
-  flex-direction: column;
-  padding: 10%;
-  align-self: center;
-}
-#prices-personal-desk {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-  margin-bottom: 10px;
-}
+/* Style texte et bouton */
+#prices-meeting-room-text-and-button,
+#prices-cosy-room-text-and-button,
 #prices-personal-desk-text-and-button {
   display: flex;
   flex-direction: column;
-  padding: 10%;
+  padding: 0 5% 0 15%;
   align-self: center;
+  text-align: center;
+  gap: 8px;
+  width: 60%;
 }
+
+/*Style & animation CSS du bouton*/
+button {
+  border: none;
+  padding: 12px 15px;
+  border-radius: 24px;
+  font-size: 12px;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  margin-top: 7px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+button:hover {
+  transform: scale(1.06);
+}
+
+/*Media query pour le changement de disposition mobile vers desktop*/
+
+@media screen and (min-width: 900px) {
+  #prices-and-formula {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  #prices-meeting-room,
+  #prices-cosy-room,
+  #prices-personal-desk {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius: 20px;
+  }
+  #prices-meeting-room-text-and-button,
+  #prices-cosy-room-text-and-button,
+  #prices-personal-desk-text-and-button {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 10px 0;
+  }
+  button {
+    margin-top: 20px;
+  }
+}
+
+/*
+
+}*/
