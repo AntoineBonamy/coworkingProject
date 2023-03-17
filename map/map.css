@@ -5,15 +5,50 @@
 
 .map-container {
     display: flex;
+    flex-direction: column;
     max-width: 100%;
     margin-bottom: 10px;
 }
 
 .map-info {
     line-height: 2;
-    max-width: 80%;
+    max-width: 100%;
     margin: 10px auto;
-    border-radius: 10%;
+    padding: 20px 0px 20px 0px;
+    /* background-color: blue; */
+}
+
+.map-info-top {
+    /* background-color: rgb(146, 206, 36); */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.map-info-top-icons {
+    /* background-color: rgb(9, 161, 177); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    opacity: 0.65;
+}
+
+.map-info-top-text {
+    /* background-color: rgb(154, 120, 182); */
+    display: flex;
+    flex-direction: column;
+
+}
+
+.map-info-bot {
+    display: flex;
+    /* background-color: rgb(209, 30, 30); */
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px 0px 0px;
 }
 
 ul {
@@ -28,4 +63,17 @@ ul {
         margin: auto auto;
 
     }
+}
+
+.map-list {
+    list-style-type: none;
+}
+
+.map-list i {
+    padding: 0px 10px 0px 10px;
+    opacity: 0.65;
+}
+
+.map-texte {
+    padding-left: 10px;
 }
