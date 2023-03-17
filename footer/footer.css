@@ -1,7 +1,7 @@
 #blocs-footer {
     margin-top: 20px;
-    background-color: rgb(240, 230, 220);
-    min-height: 190px;
+    background-color: rgba(175, 172, 172, 0.394);
+    min-height: 185px;
 }
 
 #rs-container {
@@ -9,11 +9,12 @@
     justify-content: end;
     align-items: end;
     gap: 10px;
-    padding: 10px 15px 10px 0;
+    padding: 10px 15px 0 0;
 }
 
 #rs-container a:hover {
     transform: scale(1.3);
+    transition: transform 0.5s;
 }
 
 .footer-contact ul, .footer-adress ul {
@@ -32,4 +33,23 @@
 #footer-info h3 {
     font-size: 16px;
     padding-bottom: 5px;
+}
+
+#footer-barr {
+    background-color: black;
+    height: 1px;
+    max-width: 80%;
+    margin: 10px 10% 10px 10%;
+}
+
+@media screen and (min-width: 780px) {
+    #footer-info h3 {
+        font-size: 24px;
+    }
+    #footer-info {
+        font-size: 14px;
+    }
+    #blocs-footer {
+        min-height: 215px;
+    }
 }
