@@ -137,9 +137,14 @@ h1 {
 
 .icons {
 
-
+  margin-top: 30px;
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 40px;
+
+
+  /* flex-wrap: wrap; */
 
 }
 
@@ -149,14 +154,37 @@ h1 {
   font-size: 1.3em;
   cursor: pointer;
   position: relative;
+
+
 }
 
 
 .icons .col i {
   position: absolute;
+ 
+  left: 100px;
+  top: 120%;
 
 
   font-size: 1.5em;
+ 
+
+}
+
+.icons .col:nth-child(3) i{
+
+  left: 40%;
+  }
+.icons .col:nth-child(4) i{
+
+left: 40%;
+}
+
+.txt{
+margin-bottom: 20px;
+}
+.txt:hover{
+  color: grey
 }
 
 
@@ -165,7 +193,8 @@ h1 {
 }
 
 .wrapper {
-  max-width: 1200px;
+  margin-top: 30px;
+  width: 100%;
   position: relative;
 }
 
@@ -187,7 +216,7 @@ h1 {
   margin-left: 0px;
 }
 
-.wrapper i {
+/* .wrapper i {
   height: 46px;
   width: 46px;
   text-align: center;
@@ -198,7 +227,7 @@ h1 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-}
+} */
 
 .wrapper i:first-child {
   left: -23px;
