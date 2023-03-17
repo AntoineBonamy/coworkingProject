@@ -1,4 +1,8 @@
 /*le style des titres et du texte sont appliqués depuis le fichier CSS root. Ne coder ici que les spécifités de la section Tarifs et formules*/
+#prices-and-formula {
+  width: 100%;
+  /* background-color: forestgreen; */
+}
 
 /*Style section div carte */
 #prices-meeting-room,
@@ -10,12 +14,14 @@
   margin-bottom: 5%;
   max-width: 360px;
 }
+
 /*Style div image */
 #prices-meeting-room-picture,
 #prices-cosy-room-picture,
 #prices-personal-desk-picture {
   display: flex;
 }
+
 img {
   max-width: 100%;
   max-height: 100%;
@@ -49,6 +55,7 @@ button {
   cursor: pointer;
   transition: transform 0.5s;
 }
+
 button:hover {
   transform: scale(1.06);
 }
@@ -62,6 +69,7 @@ button:hover {
     justify-content: space-around;
     gap: 20px;
   }
+
   #prices-meeting-room,
   #prices-cosy-room,
   #prices-personal-desk {
@@ -71,6 +79,7 @@ button:hover {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     border-radius: 20px;
   }
+
   #prices-meeting-room-text-and-button,
   #prices-cosy-room-text-and-button,
   #prices-personal-desk-text-and-button {
@@ -78,9 +87,11 @@ button:hover {
     flex-direction: column;
     padding: 20px 0 10px 0;
   }
+
   button {
     margin-top: 20px;
   }
+
   img {
     box-shadow: none;
   }
