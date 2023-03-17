@@ -55,11 +55,11 @@ button:hover {
 
 /*Media query pour le changement de disposition mobile vers desktop*/
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 768px) {
   #prices-and-formula {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 20px;
   }
   #prices-meeting-room,
@@ -81,8 +81,7 @@ button:hover {
   button {
     margin-top: 20px;
   }
+  img {
+    box-shadow: none;
+  }
 }
-
-/*
-
-}*/
