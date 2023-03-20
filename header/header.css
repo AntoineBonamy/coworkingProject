@@ -72,11 +72,6 @@ body {
     padding: 0px 0px 0px 0px;
 }
 
-/* #myLinks {
-    background-color: red;
-    padding: 0 0 100px 0;
-} */
-
 #header-bot {
     display: flex;
     justify-content: right;
