@@ -223,6 +223,12 @@ h3 {
   margin-left: 14px;
 }
 
+@media screen and (max-width: 600px) {
+  .carrousel img {
+    width: calc(100% / 1.2);
+  }
+}
+
 .carrousel img:first-child {
   margin-left: 0px;
 }
