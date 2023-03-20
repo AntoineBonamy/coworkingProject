@@ -1,5 +1,5 @@
 .blocs-map {
-    /* zoom: inherit; */
+    
     width: 100%;
 }
 
@@ -17,8 +17,7 @@
 
 .map-info {
     line-height: 2;
-    max-width: 100%;
-    margin: 10px auto;
+    margin: 10px;
     padding: 20px 0px 20px 0px;
     /* background-color: blue; */
 }
@@ -26,8 +25,7 @@
 .map-info-top {
     /* background-color: rgb(146, 206, 36); */
     display: flex;
-    flex-direction: row;
-    width: 100%;
+
     justify-content: center;
 }
 
@@ -39,13 +37,6 @@
     align-items: center;
     width: 50px;
     opacity: 0.65;
-}
-
-.map-info-top-text {
-    /* background-color: rgb(154, 120, 182); */
-    display: flex;
-    flex-direction: column;
-
 }
 
 .map-info-bot {
@@ -65,8 +56,7 @@ ul {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin: auto auto;
-
+        margin: auto auto; 
     }
 }
 
