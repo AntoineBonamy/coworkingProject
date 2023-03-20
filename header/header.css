@@ -23,10 +23,16 @@ body {
 
 .topnav a {
     color: white;
-    padding: 8px 0px 0px 12px;
+    padding: 10px 0px 0px 12px;
     text-decoration: none;
     font-size: 1em;
     display: block;
+}
+
+@media screen and (max-width: 463px) {
+    .topnav a {
+        font-size: 0.6em;
+    }
 }
 
 .topnav a.icon {
