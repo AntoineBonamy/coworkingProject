@@ -75,14 +75,6 @@
   top: 1px;
 }
 
-#header-bot {
-  display: flex;
-  justify-content: right;
-  align-items: flex-end;
-  height: 50%;
-  padding: 0px 15px 6px 0px;
-}
-
 #blocs-introduction {
   /* background-color: rgb(167, 146, 61); */
   width: 100%;
