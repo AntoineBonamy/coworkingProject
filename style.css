@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #bloc-container {
   display: flex;
   border: 0px solid black;
@@ -50,21 +54,6 @@
   position: absolute;
   right: 10px;
 }
-
-/* 
-.myButton {
-  
-  box-shadow: 2px 3px 10px -5px #000000;
-  background-color: #163ee0;
-  border-radius: 7px;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: Verdana;
-  font-size: 17px;
-  padding: 16px 31px;
-  text-decoration: none;
-} */
 
 .myButton:hover {
   background-color: #1130ad;
