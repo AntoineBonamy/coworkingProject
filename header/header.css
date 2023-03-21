@@ -25,6 +25,13 @@ body {
     /* background-color: yellow; */
     padding: 0 0 0 3px;
     position: relative;
+    width: 250px;
+}
+
+@media screen and (max-width: 630px) {
+    .topnav {
+        width: 180px;
+    }
 }
 
 .topnav #myLinks {
@@ -41,7 +48,7 @@ body {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.45);
 }
 
-@media screen and (max-width: 463px) {
+@media screen and (max-width: 630px) {
     .topnav a {
         font-size: 0.6em;
     }
@@ -59,6 +66,7 @@ body {
     background-color: #ddd;
     color: black;
     text-shadow: none;
+    opacity: 0.8;
 }
 
 .active {
