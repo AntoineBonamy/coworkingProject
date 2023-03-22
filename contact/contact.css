@@ -37,8 +37,8 @@
 }
 
 .contact-form-fields button {
-    background-color: #163ee0;
-    color: #ffffff;
+    background-color: var(--primary-bg-color);
+    color: var(--button-text-color);
     width: 120px;
     border: 0;
     margin: 25px auto 0;

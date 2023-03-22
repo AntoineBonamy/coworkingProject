@@ -21,6 +21,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    
+
+
+
+
     <script src="https://kit.fontawesome.com/f112ae9e24.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -32,9 +44,10 @@
         <div id="blocs-header">
             <div id="header-top">
                 <div id="header-top-menu">
-                    <!-- <i class="fa-solid fa-bars"></i> -->
+                    <a href="javascript:void(0);" class="icon-burger" onclick="myFunction()"><i
+                            class="fa fa-bars"></i></a>
                     <div class="topnav">
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+
                         <div id="myLinks">
                             <a href="#intro">Nos locaux</a>
                             <a href="#perks">Les avantages</a>
@@ -46,7 +59,7 @@
 
                 </div>
                 <div id="header-top-cta">
-                    <button type="button" id="reserver">Réserver</button>
+                    <a href="#prices"><button type="button" id="reserver">Réserver</button></a>
                 </div>
             </div>
             <div id="header-bot">J & A</div>
@@ -60,54 +73,156 @@
         <div class="text">
             <p>Bonjour nous sommes Jessica et Arnaud et nous venons d’ouvrir notre espace de coworking Sharing is
                 caring.
-                Notre état d’esprit est vraiment orienté vers le bien être au travail et le partage. Nous voulons
-                que
-                les
-                indépendants, personnes en recherche d’emploi se sentent bien ici et puissent échanger afin de créer
-                un
-                réseau. Vous trouverez plein de services et de repas maison, préparés avec des produits locaux et
+                <br> Notre état d’esprit est vraiment orienté vers le bien être au travail et le partage.
+                <br> Nous voulons que les indépendants, personnes en recherche d’emploi se sentent bien ici et puissent
+                échanger afin de créer un
+                réseau.
+                <br>Vous trouverez plein de services et de repas maison, préparés avec des produits locaux et
                 avec
                 amour
-                !</p>
+                !
+            </p>
         </div>
     </div>
     </div>
     <!-- section caroussel & icons-->
-
+    <div class="title">
+        <h2 class="centered-title"><a name="perks">"Sharing is caring"</a></h2>
+    </div>
     <!-- Partie 1:  Partie carrousel -->
 
-    <div class="wrapper">
+<div class="moncarrou">
 
-        <div class="carrousel">
+    <section>
+    
+        <div class="swiper mySwiper container">
+          <div class="swiper-wrapper content">
+    
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="assets/image2.jpg" alt="">
+                </div>
+              </div>
+            </div>
 
-            <img src="assets/photo10.jpg" alt="" srcset="" />
-            <img src="assets/photo3.jpg" alt="" srcset="" />
-            <img src="assets/photo6.jpg" alt="" srcset="" />
-            <img src="assets/photo8.jpg" alt="" srcset="" />
-            <img src="assets/photo3.jpg" alt="" srcset="" />
-            <img src="assets/photo10.jpg" alt="" srcset="" />
 
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="assets/image3.jpg" alt="">
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="assets/photo6.jpg" alt="">
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="assets/image1.jpg" alt="">
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="assets/image5.jpg" alt="">
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="assets/image6.jpg" alt="">
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="assets/image7.jpg" alt="">
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="assets/image1.jpg" alt="">
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="assets/photo8.jpg" alt="">
+                </div>
+    
+              </div>
+            </div>
+    
+          </div>
         </div>
+    
+        <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+      </section>
+
+
+
     </div>
-    <!-- Partie 2:  Partie des icons lala-->
+
+    <!-- Partie 2:  Partie des icons-->
+
     <div class="icons2">
         <div class="icons2-label-container">
+            <div class="icons2-label">Parking vélo</div>
             <div class="icons2-label">Produits locaux</div>
             <div class="icons2-label">Wifi</div>
-            <div class="icons2-label">Salle de réflexion</div>
             <div class="icons2-label">Network</div>
+            <div class="icons2-label">Salle de réflexion</div>
         </div>
         <div class="icons2-icons-container">
             <div><i class="fa-solid fa-person-biking"></i></div>
-            <div><i class="fa-sharp fa-solid fa-wheat-awn"></i></div>
+            <div><i class="fa-solid fa-seedling"></i></div>
             <div><i class="fa-solid fa-wifi"></i></div>
+            <div><i class="fa-solid fa-network-wired"></i></div>
             <div><i class="fa-regular fa-lightbulb"></i></div>
         </div>
     </div>
 
-    <!-- section tarif -->
+    <!-- section tarif-->
     <div id="blocs-prices">
-        <h2>Tarifs et formules</h2>
+        <div class="title">
+            <h2><a name="prices">Tarifs et formules</a></h2>
+        </div>
         <section id="prices-and-formula">
 
             <div id="prices-meeting-room">
@@ -115,12 +230,12 @@
                     <h3>Salle de réunion</h3>
                     <p>(8 places)</p>
                     <p>Tarif journalier : 30 €</p>
-                    <button class="prices-button-selection" type="button">
+                    <button id="meeting-room-button" type="button" onclick="changeButtonMeeting()">
                         Sélectionner
                     </button>
                 </div>
                 <div id="prices-meeting-room-picture">
-                    <img class="meeting-room-picture" src="assets/meeting-room.jpg" alt="meeting room picture" />
+                    <img id="meeting-room-picture" src="assets/meeting-room.jpg" alt="meeting room picture" />
                 </div>
             </div>
 
@@ -131,7 +246,7 @@
                     <h3>Espace cosy</h3>
                     <p>(2 places)</p>
                     <p>Tarif journalier : 50 €</p>
-                    <button class="prices-button-selection" type="button">
+                    <button id="cosy-room-button" type="button" onclick="changeButtonCosy()">
                         Sélectionner
                     </button>
                 </div>
@@ -145,7 +260,7 @@
                     <h3>Bureau personnel</h3>
                     <p>(1 place)</p>
                     <p>Tarif journalier : 90 €</p>
-                    <button class="prices-button-selection" type="button">
+                    <button id="personnal-room-button" type="button" onclick="changeButtonPersonnal()">
                         Sélectionner
                     </button>
                 </div>
@@ -157,35 +272,39 @@
     </div>
     <!-- section map -->
     <div id="blocs-map">
-        <h2><a name="map">Retrouvez nous : </a></h2>
+        <div class="title">
+            <h2><a name="map">Retrouvez nous</a></h2>
+        </div>
         <section class="map-section">
             <div class="map-container">
                 <iframe id="map-interface"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d537.7856734745254!2d-1.547760093787276!3d47.211302751940785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805eeb04e035b03%3A0xfe166fb643fd3846!2s4%20Rue%20Baron%2C%2044000%20Nantes!5e0!3m2!1sfr!2sfr!4v1678872845942!5m2!1sfr!2sfr"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="map-info">
                 <div class="map-info-top">
                     <div class="map-info-top-icons">
-                        <div>
+                        <div class="map-info-icon">
                             <i class="fa-solid fa-location-dot"></i>
                         </div>
-                        <div>
+                        <div class="map-info-icon">
                             <i class="fa-solid fa-car"></i>
+
                         </div>
-                        <div>
+                        <div class="map-info-icon">
                             <i class="fa-solid fa-bicycle"></i>
+
                         </div>
-                        <div>
+                        <div class="map-info-icon">
                             <i class="fa-solid fa-bus"></i>
                         </div>
                     </div>
                     <div class="map-info-top-text">
-                        <div>4 rue Baron 44000 Nantes</div>
-                        <div>Parking à proximité</div>
-                        <div>Accès vélo</div>
-                        <div>Bus & Tram</div>
+                        <div class="map-info-text">4 rue Baron 44000 Nantes</div>
+                        <div class="map-info-text">Parking à proximité</div>
+                        <div class="map-info-text">Accès vélo</div>
+                        <div class="map-info-text">Bus & Tram</div>
                     </div>
                 </div>
                 <div class="map-info-bot">
@@ -196,10 +315,14 @@
         </section>
     </div>
 
-    <!-- section contact 1123333  -->
+
+    <!-- section contact  -->
+    <div class="title">
+        <h2>Nous contacter</h2>
+    </div>
     <section class="contact">
         <div class="form-name">
-            <h2>Nous contacter</h2>
+
         </div>
 
         <div class="contact-form">
@@ -231,13 +354,33 @@
             <section class="footer-contact">
                 <h3><a name="contact">Contact</a></h3>
                 <ul>
-                    <li>Jessica : 03.55.69.26.26</li>
-                    <li>jessica.coworking@gmail.fr</li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        Jessica : 03.55.69.26.26
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        jessica.coworking@gmail.fr
+                    </li>
                     <br>
-                    <li>Arnaud : 05.55.55.55.55</li>
-                    <li>arnaud.coworking@gmail.fr</li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        Arnaud : 05.55.55.55.55
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        arnaud.coworking@gmail.fr
+                    </li>
                 </ul>
             </section>
+            <div id="myLinks-footer">
+                <a href="#blocs-header"><h3>Menu</h3></a>
+                <a href="#intro">Nos locaux</a>
+                <a href="#perks">Les avantages</a>
+                <a href="#prices">Tarifs</a>
+                <a href="#map">Nous retrouver</a>
+                <a href="#contact">Contact</a>
+            </div>
             <section class="footer-adress">
                 <h3>Adresse</h3>
                 <ul>
@@ -262,7 +405,12 @@
                 <i class="fa-brands fa-linkedin"></i>
             </a>
         </section>
-
+        <div id="arrow-up">
+            <a href="#blocs-header">
+                <i class="fa-solid fa-arrow-up">
+                </i>
+            </a>
+        </div>
 
     </div>
     <script type="text/javascript" src="footer/footer.js"></script>
@@ -271,6 +419,35 @@
     <script type="text/javascript" src="prices/prices.js"></script>
     <script type="text/javascript" src="contact/contact.js"></script>
     <script type="text/javascript" src="carousel/carousel.js"></script>
+
+         <!-- Swiper JS -->
+         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+         <!-- <script src="./script.js"></script> -->
+   
+         <script>
+   
+   var swiper = new Swiper(".mySwiper", {
+     slidesPerView: 3,
+     spaceBetween: 30,
+     slidesPerGroup: 3,
+     loop: true,
+     loopFillGroupWithBlank: true,
+     pagination: {
+       el: ".swiper-pagination",
+       clickable: true,
+     },
+     navigation: {
+       nextEl: ".swiper-button-next",
+       prevEl: ".swiper-button-prev",
+     },
+   });
+   
+         </script>
+
+    <!-- Script JS bouton section tarifs et formules -->
+    <script type="text/javascript" src="prices/prices.js"></script>
+
 </body>
 
 </html>

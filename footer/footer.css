@@ -1,5 +1,4 @@
 #blocs-footer {
-    margin-top: 20px;
     background-color: rgba(175, 172, 172, 0.394);
     min-height: 185px;
     bottom: 0;
@@ -11,7 +10,7 @@
     justify-content: end;
     align-items: end;
     gap: 10px;
-    padding: 30px 20px 0 0;
+    padding: 30px 20px 20px 0;
 }
 
 #rs-container a:hover {
@@ -25,8 +24,15 @@
     margin: 0;
 }
 
+.fa-phone, .fa-envelope {
+    margin-right: 8px;
+}
+
 .fa-brands {
-    color: rgb(55, 53, 53);
+
+    color: var(--primary-bg-color);
+    font-size: 1.2em;
+
 }
 
 #footer-info {
@@ -48,7 +54,10 @@
     max-width: 80%;
     margin: 10px 10% 10px 10%;
 }
+#myLinks-footer {
+    display: none;
 
+}
 @media screen and (min-width: 780px) {
     #footer-info h3 {
         font-size: 24px;
@@ -61,4 +70,36 @@
     #blocs-footer {
         min-height: 215px;
     }
+    #myLinks-footer {
+        display: flex;
+        flex-direction: column;
+    }
+    #myLinks-footer a {
+        display: flex;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+#arrow-up {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    bottom: 50px;
+    right: 50px;
+    background-color: rgb(129, 125, 125);
+    opacity: 0.5;
+    border-radius: 50%;
+}
+
+#arrow-up a {
+    color: white;
+}
+
+#arrow-up a:hover {
+    transform: scale(1.5);
+    transition: transform 0.5s;
 }
