@@ -68,10 +68,13 @@
     transition: 200ms ease-in-out;
 }
 
-.open-popup {
+.open-popup .popup {
     margin-top: -260px;
     visibility: visible;
     transform: translate(-50%, -50%) scale(1);
+}
+.open-popup #overlay {
+    display: block;
 }
 
 @media screen and (min-width: 400px) {
