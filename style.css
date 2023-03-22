@@ -70,11 +70,13 @@ html {
   text-decoration: none;
 } */
 
-.myrtest {
-    font-size: 90px;
-    margin-left: 800px;
-    font-family: "Dancing Script", cursive;
-}
+
+/* .myrtest {
+  font-size: 90px;
+  margin-left: 800px;
+  font-family: 'Dancing Script', cursive;
+} */
+
 
 .myButton:hover {
     background-color: #1130ad;
@@ -267,50 +269,54 @@ h3 {
 /*  */
 
 .moncarrou {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 section {
-    position: relative;
-    /* height: 1450px; */
-    /* width: 1075px; */
-    /* display: flex;
-    align-items: center; */
+  position: relative;
+  /* height: 1450px; */
+  /* width: 1075px;
+  display: flex; */
+  align-items: center;
 }
 
 .swiper {
-    width: 1200px;
-    /* width: 950px; */
+  width: 100%;
+  /* width: 950px; */
 }
 
 .card {
-    position: relative;
-    background: #fff;
-    border-radius: 20px;
-    height: 4200px;
-    margin: 20px 0;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 60px;
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  height: 4200px;
+  margin: 20px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 60px;
 }
 
 .card::before {
-    content: "";
-    position: absolute;
-    height: 1%;
-    width: 100%;
-    background: white;
-    border-radius: 20px 20px 0 0;
+  content: "";
+  position: absolute;
+  height: 1%;
+  width: 100%;
+  background: white;
+  border-radius: 20px 20px 0 0;
 }
 
+
 .card .card-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    position: relative;
-    z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  z-index: 100;
+
 }
 
 section .card .image {
@@ -320,34 +326,47 @@ section .card .image {
     border-radius: 20%;
     padding: 3px;
 
-    margin-top: 30px;
+
+section .card .image {
+  /* height: 290px; */
+  height: 470px;
+  width: 100%;
+  border-radius: 20%;
+  padding: 3px;
+
+  margin-top: 30px;
 }
 
 section .card .image img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 5%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5%;
+
 }
 
 .swiper-pagination {
-    position: absolute;
-    top: 150px;
+  position: absolute;
+  top: 150px;
 }
 
 .swiper-button-prev {
-    margin-left: -80px;
-    opacity: 1;
-    color: black;
-    transition: all 0.3s ease;
+  margin-left: -80px;
+  opacity: 1;
+  color: black;
+  transition: all 0.3s ease;
 }
 
 .swiper-button-next {
-    margin-right: -80px;
+  margin-right: -80px;
+
 }
+
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-    opacity: 1;
-    color: black;
-    transition: all 0.3s ease;
+
+  opacity: 1;
+  color: black;
+  transition: all 0.3s ease;
 }
+

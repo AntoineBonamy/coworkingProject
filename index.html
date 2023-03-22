@@ -21,17 +21,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    
-
-
-
 
     <script src="https://kit.fontawesome.com/f112ae9e24.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -91,116 +84,20 @@
     </div>
     <!-- Partie 1:  Partie carrousel -->
 
-<div class="moncarrou">
+    <div class="wrapper">
 
-    <section>
-    
-        <div class="swiper mySwiper container">
-          <div class="swiper-wrapper content">
-    
-            <div class="swiper-slide card">
-              <div class="card-content">
-                <div class="image">
-                  <img src="assets/image2.jpg" alt="">
-                </div>
-              </div>
-            </div>
+        <div class="carrousel">
 
+            <img src="assets/photo10.jpg" alt="" srcset="" />
+            <img src="assets/photo3.jpg" alt="" srcset="" />
+            <img src="assets/photo6.jpg" alt="" srcset="" />
+            <img src="assets/photo8.jpg" alt="" srcset="" />
+            <img src="assets/photo3.jpg" alt="" srcset="" />
+            <img src="assets/photo10.jpg" alt="" srcset="" />
 
-            <div class="swiper-slide card">
-              <div class="card-content">
-                <div class="image">
-                  <img src="assets/image3.jpg" alt="">
-                </div>
-              </div>
-            </div>
-
-
-
-            <div class="swiper-slide card">
-              <div class="card-content">
-                <div class="image">
-                  <img src="assets/photo6.jpg" alt="">
-                </div>
-              </div>
-            </div>
-
-
-
-            <div class="swiper-slide card">
-              <div class="card-content">
-                <div class="image">
-                  <img src="assets/image1.jpg" alt="">
-                </div>
-              </div>
-            </div>
-
-
-
-            <div class="swiper-slide card">
-              <div class="card-content">
-                <div class="image">
-                  <img src="assets/image5.jpg" alt="">
-                </div>
-              </div>
-            </div>
-
-
-
-            <div class="swiper-slide card">
-              <div class="card-content">
-                <div class="image">
-                  <img src="assets/image6.jpg" alt="">
-                </div>
-              </div>
-            </div>
-
-
-
-            <div class="swiper-slide card">
-              <div class="card-content">
-                <div class="image">
-                  <img src="assets/image7.jpg" alt="">
-                </div>
-              </div>
-            </div>
-
-
-
-            <div class="swiper-slide card">
-              <div class="card-content">
-                <div class="image">
-                  <img src="assets/image1.jpg" alt="">
-                </div>
-              </div>
-            </div>
-
-
-
-
-            <div class="swiper-slide card">
-              <div class="card-content">
-                <div class="image">
-                  <img src="assets/photo8.jpg" alt="">
-                </div>
-    
-              </div>
-            </div>
-    
-          </div>
         </div>
-    
-        <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
-      </section>
-
-
-
     </div>
-
     <!-- Partie 2:  Partie des icons-->
-
     <div class="icons2">
         <div class="icons2-label-container">
             <div class="icons2-label">Parking vélo</div>
@@ -290,11 +187,9 @@
                         </div>
                         <div class="map-info-icon">
                             <i class="fa-solid fa-car"></i>
-
                         </div>
                         <div class="map-info-icon">
                             <i class="fa-solid fa-bicycle"></i>
-
                         </div>
                         <div class="map-info-icon">
                             <i class="fa-solid fa-bus"></i>
@@ -315,7 +210,6 @@
         </section>
     </div>
 
-
     <!-- section contact  -->
     <div class="title">
         <h2>Nous contacter</h2>
@@ -326,27 +220,16 @@
         </div>
 
         <div class="contact-form">
-            <form class="contact-form-fields" onsubmit="openPopup(event)">
-                <input type="text" id="name" placeholder="Nom" >
-                <input type="text" id="phone_number" placeholder="Téléphone ">
-                <input type="email" id="email" placeholder="E-mail">
-                <textarea type="text" placeholder="Message"></textarea>
+            <form class="contact-form-fields">
+                <input type="text" id="name" placeholder="Votre Nom" required>
+                <input type="text" id="phone_number" placeholder="Votre Téléphone ">
+                <input type="email" id="email" placeholder="Votre e-mail">
+                <textarea type="text" placeholder="Votre Message"></textarea>
                 <button type="submit"> Envoyer</button>
             </form>
+        </div>
+    </section>
 
-            <div id="overlay"></div>
-
-            <div class="popup" id="popup">
-                <h2>Merci !</h2>
-                <p>Nous allons vous répondre dans les meilleurs délais.</p>
-                <button type="button" onclick="closePopup()">OK</button>
-            </div>
-        
-
-        <script src="contact.js"></script>
-</section>
-
-   
 
     <!-- section footer -->
     <div id="blocs-footer">
@@ -374,7 +257,9 @@
                 </ul>
             </section>
             <div id="myLinks-footer">
-                <a href="#blocs-header"><h3>Menu</h3></a>
+                <a href="#blocs-header">
+                    <h3>Menu</h3>
+                </a>
                 <a href="#intro">Nos locaux</a>
                 <a href="#perks">Les avantages</a>
                 <a href="#prices">Tarifs</a>
@@ -419,35 +304,8 @@
     <script type="text/javascript" src="prices/prices.js"></script>
     <script type="text/javascript" src="contact/contact.js"></script>
     <script type="text/javascript" src="carousel/carousel.js"></script>
-
-         <!-- Swiper JS -->
-         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    
-         <!-- <script src="./script.js"></script> -->
-   
-         <script>
-   
-   var swiper = new Swiper(".mySwiper", {
-     slidesPerView: 3,
-     spaceBetween: 30,
-     slidesPerGroup: 3,
-     loop: true,
-     loopFillGroupWithBlank: true,
-     pagination: {
-       el: ".swiper-pagination",
-       clickable: true,
-     },
-     navigation: {
-       nextEl: ".swiper-button-next",
-       prevEl: ".swiper-button-prev",
-     },
-   });
-   
-         </script>
-
     <!-- Script JS bouton section tarifs et formules -->
     <script type="text/javascript" src="prices/prices.js"></script>
-
 </body>
 
 </html>
