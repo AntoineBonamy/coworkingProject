@@ -57,8 +57,12 @@
 }
 #myLinks-footer {
     display: none;
-
 }
+
+#myLinks-footer a:hover {
+    text-decoration: underline;
+}
+
 @media screen and (min-width: 780px) {
     #footer-info h3 {
         font-size: 24px;
