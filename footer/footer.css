@@ -88,11 +88,11 @@
 
 #arrow-up {
     position: fixed;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     bottom: 50px;
     right: 50px;
     background-color: var(--primary-bg-color);
