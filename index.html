@@ -21,10 +21,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    
+
+
+
 
     <script src="https://kit.fontawesome.com/f112ae9e24.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -83,19 +90,121 @@
     </div>
     <!-- Partie 1:  Partie carrousel -->
 
-    <div class="wrapper">
+<div class="moncarrou">
 
-        <div class="carrousel">
+    <section>
+    
+        <div class="swiper mySwiper container">
+          <div class="swiper-wrapper content">
+    
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="assets/image2.jpg" alt="">
+                </div>
+              </div>
+            </div>
 
-            <img src="assets/photo10.jpg" alt="" srcset="" />
-            <img src="assets/photo3.jpg" alt="" srcset="" />
-            <img src="assets/photo6.jpg" alt="" srcset="" />
-            <img src="assets/photo8.jpg" alt="" srcset="" />
-            <img src="assets/photo3.jpg" alt="" srcset="" />
-            <img src="assets/photo10.jpg" alt="" srcset="" />
 
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="assets/image3.jpg" alt="">
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="assets/photo6.jpg" alt="">
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="assets/image1.jpg" alt="">
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="assets/image5.jpg" alt="">
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="assets/image6.jpg" alt="">
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="assets/image7.jpg" alt="">
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="assets/image1.jpg" alt="">
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="assets/photo8.jpg" alt="">
+                </div>
+    
+              </div>
+            </div>
+    
+          </div>
         </div>
+    
+        <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+      </section>
+
+
+
     </div>
+    
+ 
+
+
+
+
+
+
     <!-- Partie 2:  Partie des icons lala-->
     <div class="icons2">
         <div class="icons2-label-container">
@@ -182,9 +291,7 @@
                         </div>
                         <div>
                             <i class="fa-solid fa-car"></i>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-bicycle"></i>
+                        </div>                            <i class="fa-solid fa-bicycle"></i>
                         </div>
                         <div>
                             <i class="fa-solid fa-bus"></i>
@@ -269,6 +376,30 @@
     <script type="text/javascript" src="prices/prices.js"></script>
     <script type="text/javascript" src="contact/contact.js"></script>
     <script type="text/javascript" src="carousel/carousel.js"></script>
+         <!-- Swiper JS -->
+         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+         <!-- <script src="./script.js"></script> -->
+   
+         <script>
+   
+   var swiper = new Swiper(".mySwiper", {
+     slidesPerView: 3,
+     spaceBetween: 30,
+     slidesPerGroup: 3,
+     loop: true,
+     loopFillGroupWithBlank: true,
+     pagination: {
+       el: ".swiper-pagination",
+       clickable: true,
+     },
+     navigation: {
+       nextEl: ".swiper-button-next",
+       prevEl: ".swiper-button-prev",
+     },
+   });
+   
+         </script>
 </body>
 
 </html>
