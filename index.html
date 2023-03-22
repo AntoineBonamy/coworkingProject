@@ -209,11 +209,8 @@
     <div class="title">
         <h2>Nous contacter</h2>
     </div>
+
     <section class="contact">
-        <div class="form-name">
-
-        </div>
-
         <div class="contact-form">
             <form class="contact-form-fields" onsubmit="openPopup(event)">
                 <input type="text" id="name" placeholder="Nom">
@@ -223,9 +220,7 @@
                 <button type="submit"> Envoyer</button>
             </form>
         </div>
-    </section>
-
-
+        <div class="pop-message">
             <div id="overlay"></div>
 
             <div class="popup" id="popup">
@@ -233,6 +228,8 @@
                 <p>Nous allons vous répondre dans les meilleurs délais.</p>
                 <button type="button" onclick="closePopup()">OK</button>
             </div>
+</div>
+
 
 
             <script src="contact.js"></script>
