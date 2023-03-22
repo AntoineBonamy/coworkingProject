@@ -24,8 +24,13 @@
     margin: 0;
 }
 
+.fa-phone, .fa-envelope {
+    margin-right: 8px;
+}
+
 .fa-brands {
     color: rgb(55, 53, 53);
+    font-size: 20px;
 }
 
 #footer-info {
@@ -47,7 +52,10 @@
     max-width: 80%;
     margin: 10px 10% 10px 10%;
 }
+#myLinks-footer {
+    display: none;
 
+}
 @media screen and (min-width: 780px) {
     #footer-info h3 {
         font-size: 24px;
@@ -59,5 +67,14 @@
 
     #blocs-footer {
         min-height: 215px;
+    }
+    #myLinks-footer {
+        display: flex;
+        flex-direction: column;
+    }
+    #myLinks-footer a {
+        display: flex;
+        text-decoration: none;
+        color: black;
     }
 }
