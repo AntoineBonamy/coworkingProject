@@ -24,8 +24,13 @@
     margin: 0;
 }
 
+.fa-phone, .fa-envelope {
+    margin-right: 8px;
+}
+
 .fa-brands {
     color: rgb(55, 53, 53);
+    font-size: 20px;
 }
 
 #footer-info {
