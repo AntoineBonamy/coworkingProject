@@ -1,6 +1,8 @@
 /*le style des titres et du texte sont appliqués depuis le fichier CSS root. Ne coder ici que les spécifités de la section Tarifs et formules*/
 #prices-and-formula {
-  padding: 20px 0px 0px 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+
 }
 
 /*Style section div carte */
