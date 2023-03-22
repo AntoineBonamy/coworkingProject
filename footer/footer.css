@@ -10,7 +10,7 @@
     justify-content: end;
     align-items: end;
     gap: 10px;
-    padding: 30px 20px 0 0;
+    padding: 30px 20px 20px 0;
 }
 
 #rs-container a:hover {
@@ -29,8 +29,10 @@
 }
 
 .fa-brands {
-    color: rgb(55, 53, 53);
-    font-size: 20px;
+
+    color: var(--primary-bg-color);
+    font-size: 1.2em;
+
 }
 
 #footer-info {
