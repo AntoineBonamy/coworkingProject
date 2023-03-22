@@ -11,6 +11,20 @@ body {
     border-radius: 10px;
   } */
 
+/* #blocs-introduction {
+    padding: 10px 15% 0 15%;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 700px) {
+    #blocs-introduction {
+        padding: 0 10% 0 10%;
+        font-size: 1em;
+    }
+} */
+
+
+
 .icon-burger {
     display: block;
     color: white;
