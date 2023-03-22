@@ -220,16 +220,27 @@
         </div>
 
         <div class="contact-form">
-            <form class="contact-form-fields">
-                <input type="text" id="name" placeholder="Votre Nom" required>
-                <input type="text" id="phone_number" placeholder="Votre Téléphone ">
-                <input type="email" id="email" placeholder="Votre e-mail">
-                <textarea type="text" placeholder="Votre Message"></textarea>
+            <form class="contact-form-fields" onsubmit="openPopup(event)">
+                <input type="text" id="name" placeholder="Nom" >
+                <input type="text" id="phone_number" placeholder="Téléphone ">
+                <input type="email" id="email" placeholder="E-mail">
+                <textarea type="text" placeholder="Message"></textarea>
                 <button type="submit"> Envoyer</button>
             </form>
-        </div>
-    </section>
 
+            <div id="overlay"></div>
+
+            <div class="popup" id="popup">
+                <h2>Merci !</h2>
+                <p>Nous allons vous répondre dans les meilleurs délais.</p>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
+        
+
+        <script src="contact.js"></script>
+</section>
+
+   
 
     <!-- section footer -->
     <div id="blocs-footer">
