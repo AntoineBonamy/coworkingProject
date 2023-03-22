@@ -54,9 +54,14 @@ ul {
 @media screen and (min-width: 900px) {
     .map-section {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        margin: auto auto; 
+    }
+    .map-container {
+        width: 700px;
+    }
+    .map-info {
+        margin: auto;
     }
 }
 
