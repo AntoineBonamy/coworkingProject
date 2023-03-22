@@ -76,11 +76,11 @@ html {
   text-decoration: none;
 } */
 
-.myrtest{
+/* .myrtest {
   font-size: 90px;
   margin-left: 800px;
   font-family: 'Dancing Script', cursive;
-}
+} */
 
 
 
@@ -290,27 +290,27 @@ h3 {
 
 /*  */
 
-.moncarrou{
+.moncarrou {
   display: flex;
   align-items: center;
   justify-content: center;
 
 }
 
-section{
-  position: relative;  
+section {
+  position: relative;
   /* height: 1450px; */
-  width: 1075px;
-  display: flex;
+  /* width: 1075px;
+  display: flex; */
   align-items: center;
 }
 
-.swiper{
-  width: 1200px;
+.swiper {
+  width: 100%;
   /* width: 950px; */
 }
 
-.card{
+.card {
   position: relative;
   background: #fff;
   border-radius: 20px;
@@ -320,7 +320,7 @@ section{
   margin-bottom: 60px;
 }
 
-.card::before{
+.card::before {
   content: "";
   position: absolute;
   height: 1%;
@@ -330,7 +330,7 @@ section{
 }
 
 
-.card .card-content{
+.card .card-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -340,17 +340,17 @@ section{
 }
 
 
-section .card .image{
+section .card .image {
   /* height: 290px; */
   height: 470px;
-  width: 300px;
+  width: 100%;
   border-radius: 20%;
   padding: 3px;
 
   margin-top: 30px;
 }
 
-section .card .image img{
+section .card .image img {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -358,29 +358,27 @@ section .card .image img{
 
 }
 
-.swiper-pagination{
+.swiper-pagination {
   position: absolute;
   top: 150px;
 }
 
- .swiper-button-prev{
+.swiper-button-prev {
   margin-left: -80px;
   opacity: 1;
   color: black;
   transition: all 0.3s ease;
 }
 
-.swiper-button-next{
+.swiper-button-next {
   margin-right: -80px;
 
 }
-.swiper-button-next:hover, .swiper-button-prev:hover{
-  
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+
   opacity: 1;
   color: black;
   transition: all 0.3s ease;
 }
-
-
-
-
