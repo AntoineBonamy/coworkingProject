@@ -115,12 +115,12 @@
                     <h3>Salle de réunion</h3>
                     <p>(8 places)</p>
                     <p>Tarif journalier : 30 €</p>
-                    <button class="prices-button-selection" type="button">
+                    <button id="meeting-room-button" type="button" onclick="changeButtonMeeting()">
                         Sélectionner
                     </button>
                 </div>
                 <div id="prices-meeting-room-picture">
-                    <img class="meeting-room-picture" src="assets/meeting-room.jpg" alt="meeting room picture" />
+                    <img id="meeting-room-picture" src="assets/meeting-room.jpg" alt="meeting room picture" />
                 </div>
             </div>
 
@@ -131,8 +131,8 @@
                     <h3>Espace cosy</h3>
                     <p>(2 places)</p>
                     <p>Tarif journalier : 50 €</p>
-                    <button class="prices-button-selection" type="button">
-                        Sélectionner
+                    <button id="cosy-room-button" type="button" onclick="changeButtonCosy()">
+                        Sélectionner 
                     </button>
                 </div>
                 <div id="prices-cosy-room-picture">
@@ -145,7 +145,7 @@
                     <h3>Bureau personnel</h3>
                     <p>(1 place)</p>
                     <p>Tarif journalier : 90 €</p>
-                    <button class="prices-button-selection" type="button">
+                    <button id="personnal-room-button" type="button" onclick="changeButtonPersonnal()">
                         Sélectionner
                     </button>
                 </div>
@@ -259,6 +259,8 @@
     <script type="text/javascript" src="prices/prices.js"></script>
     <script type="text/javascript" src="contact/contact.js"></script>
     <script type="text/javascript" src="carousel/carousel.js"></script>
+    <!-- Script JS bouton section tarifs et formules -->
+    <script type="text/javascript" src="prices/prices.js"></script>
 </body>
 
 </html>
