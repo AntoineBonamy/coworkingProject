@@ -44,9 +44,10 @@
         <div id="blocs-header">
             <div id="header-top">
                 <div id="header-top-menu">
-                    <!-- <i class="fa-solid fa-bars"></i> -->
+                    <a href="javascript:void(0);" class="icon-burger" onclick="myFunction()"><i
+                            class="fa fa-bars"></i></a>
                     <div class="topnav">
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+
                         <div id="myLinks">
                             <a href="#intro">Nos locaux</a>
                             <a href="#perks">Les avantages</a>
@@ -58,7 +59,7 @@
 
                 </div>
                 <div id="header-top-cta">
-                    <button type="button" id="reserver">Réserver</button>
+                    <a href="#prices"><button type="button" id="reserver">Réserver</button></a>
                 </div>
             </div>
             <div id="header-bot">J & A</div>
@@ -72,21 +73,21 @@
         <div class="text">
             <p>Bonjour nous sommes Jessica et Arnaud et nous venons d’ouvrir notre espace de coworking Sharing is
                 caring.
-                Notre état d’esprit est vraiment orienté vers le bien être au travail et le partage. Nous voulons
-                que
-                les
-                indépendants, personnes en recherche d’emploi se sentent bien ici et puissent échanger afin de créer
-                un
-                réseau. Vous trouverez plein de services et de repas maison, préparés avec des produits locaux et
+                <br> Notre état d’esprit est vraiment orienté vers le bien être au travail et le partage.
+                <br> Nous voulons que les indépendants, personnes en recherche d’emploi se sentent bien ici et puissent
+                échanger afin de créer un
+                réseau.
+                <br>Vous trouverez plein de services et de repas maison, préparés avec des produits locaux et
                 avec
                 amour
-                !</p>
+                !
+            </p>
         </div>
     </div>
     </div>
     <!-- section caroussel & icons-->
     <div class="title">
-        <h2 class="centered-title"><a name="intro">"Sharing is caring"</a></h2>
+        <h2 class="centered-title"><a name="perks">"Sharing is caring"</a></h2>
     </div>
     <!-- Partie 1:  Partie carrousel -->
 
@@ -197,15 +198,9 @@
 
 
     </div>
-    
- 
 
+    <!-- Partie 2:  Partie des icons-->
 
-
-
-
-
-    <!-- Partie 2:  Partie des icons lala-->
     <div class="icons2">
         <div class="icons2-label-container">
             <div class="icons2-label">Parking vélo</div>
@@ -223,9 +218,11 @@
         </div>
     </div>
 
-    <!-- section tarif -->
+    <!-- section tarif-->
     <div id="blocs-prices">
-        <h2>Tarifs et formules</h2>
+        <div class="title">
+            <h2><a name="prices">Tarifs et formules</a></h2>
+        </div>
         <section id="prices-and-formula">
 
             <div id="prices-meeting-room">
@@ -233,12 +230,12 @@
                     <h3>Salle de réunion</h3>
                     <p>(8 places)</p>
                     <p>Tarif journalier : 30 €</p>
-                    <button class="prices-button-selection" type="button">
+                    <button id="meeting-room-button" type="button" onclick="changeButtonMeeting()">
                         Sélectionner
                     </button>
                 </div>
                 <div id="prices-meeting-room-picture">
-                    <img class="meeting-room-picture" src="assets/meeting-room.jpg" alt="meeting room picture" />
+                    <img id="meeting-room-picture" src="assets/meeting-room.jpg" alt="meeting room picture" />
                 </div>
             </div>
 
@@ -249,7 +246,7 @@
                     <h3>Espace cosy</h3>
                     <p>(2 places)</p>
                     <p>Tarif journalier : 50 €</p>
-                    <button class="prices-button-selection" type="button">
+                    <button id="cosy-room-button" type="button" onclick="changeButtonCosy()">
                         Sélectionner
                     </button>
                 </div>
@@ -263,7 +260,7 @@
                     <h3>Bureau personnel</h3>
                     <p>(1 place)</p>
                     <p>Tarif journalier : 90 €</p>
-                    <button class="prices-button-selection" type="button">
+                    <button id="personnal-room-button" type="button" onclick="changeButtonPersonnal()">
                         Sélectionner
                     </button>
                 </div>
@@ -275,7 +272,9 @@
     </div>
     <!-- section map -->
     <div id="blocs-map">
-        <h2><a name="map">Retrouvez nous</a></h2>
+        <div class="title">
+            <h2><a name="map">Retrouvez nous</a></h2>
+        </div>
         <section class="map-section">
             <div class="map-container">
                 <iframe id="map-interface"
@@ -286,22 +285,26 @@
             <div class="map-info">
                 <div class="map-info-top">
                     <div class="map-info-top-icons">
-                        <div>
+                        <div class="map-info-icon">
                             <i class="fa-solid fa-location-dot"></i>
                         </div>
-                        <div>
+                        <div class="map-info-icon">
                             <i class="fa-solid fa-car"></i>
-                        </div>                            <i class="fa-solid fa-bicycle"></i>
+
                         </div>
-                        <div>
+                        <div class="map-info-icon">
+                            <i class="fa-solid fa-bicycle"></i>
+
+                        </div>
+                        <div class="map-info-icon">
                             <i class="fa-solid fa-bus"></i>
                         </div>
                     </div>
                     <div class="map-info-top-text">
-                        <div>4 rue Baron 44000 Nantes</div>
-                        <div>Parking à proximité</div>
-                        <div>Accès vélo</div>
-                        <div>Bus & Tram</div>
+                        <div class="map-info-text">4 rue Baron 44000 Nantes</div>
+                        <div class="map-info-text">Parking à proximité</div>
+                        <div class="map-info-text">Accès vélo</div>
+                        <div class="map-info-text">Bus & Tram</div>
                     </div>
                 </div>
                 <div class="map-info-bot">
@@ -313,22 +316,36 @@
     </div>
 
     <!-- section contact  -->
+    <div class="title">
+        <h2>Nous contacter</h2>
+    </div>
     <section class="contact">
         <div class="form-name">
-            <h2>Nous contacter</h2>
+
         </div>
 
         <div class="contact-form">
-            <form class="contact-form-fields">
-                <input type="text" id="name" placeholder="Votre Nom" required>
-                <input type="text" id="phone_number" placeholder="Votre Téléphone ">
-                <input type="email" id="email" placeholder="Votre e-mail">
-                <textarea type="text" placeholder="Votre Message"></textarea>
+            <form class="contact-form-fields" onsubmit="openPopup(event)">
+                <input type="text" id="name" placeholder="Nom" >
+                <input type="text" id="phone_number" placeholder="Téléphone ">
+                <input type="email" id="email" placeholder="E-mail">
+                <textarea type="text" placeholder="Message"></textarea>
                 <button type="submit"> Envoyer</button>
             </form>
-        </div>
-    </section>
 
+            <div id="overlay"></div>
+
+            <div class="popup" id="popup">
+                <h2>Merci !</h2>
+                <p>Nous allons vous répondre dans les meilleurs délais.</p>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
+        
+
+        <script src="contact.js"></script>
+</section>
+
+   
 
     <!-- section footer -->
     <div id="blocs-footer">
@@ -336,13 +353,33 @@
             <section class="footer-contact">
                 <h3><a name="contact">Contact</a></h3>
                 <ul>
-                    <li>Jessica : 03.55.69.26.26</li>
-                    <li>jessica.coworking@gmail.fr</li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        Jessica : 03.55.69.26.26
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        jessica.coworking@gmail.fr
+                    </li>
                     <br>
-                    <li>Arnaud : 05.55.55.55.55</li>
-                    <li>arnaud.coworking@gmail.fr</li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        Arnaud : 05.55.55.55.55
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        arnaud.coworking@gmail.fr
+                    </li>
                 </ul>
             </section>
+            <div id="myLinks-footer">
+                <a href="#blocs-header"><h3>Menu</h3></a>
+                <a href="#intro">Nos locaux</a>
+                <a href="#perks">Les avantages</a>
+                <a href="#prices">Tarifs</a>
+                <a href="#map">Nous retrouver</a>
+                <a href="#contact">Contact</a>
+            </div>
             <section class="footer-adress">
                 <h3>Adresse</h3>
                 <ul>
@@ -367,7 +404,12 @@
                 <i class="fa-brands fa-linkedin"></i>
             </a>
         </section>
-
+        <div id="arrow-up">
+            <a href="#blocs-header">
+                <i class="fa-solid fa-arrow-up">
+                </i>
+            </a>
+        </div>
 
     </div>
     <script type="text/javascript" src="footer/footer.js"></script>
@@ -376,6 +418,7 @@
     <script type="text/javascript" src="prices/prices.js"></script>
     <script type="text/javascript" src="contact/contact.js"></script>
     <script type="text/javascript" src="carousel/carousel.js"></script>
+
          <!-- Swiper JS -->
          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     
@@ -400,6 +443,10 @@
    });
    
          </script>
+
+    <!-- Script JS bouton section tarifs et formules -->
+    <script type="text/javascript" src="prices/prices.js"></script>
+
 </body>
 
 </html>
