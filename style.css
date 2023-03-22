@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #bloc-container {
   display: flex;
   border: 0px solid black;
@@ -51,21 +55,6 @@
   right: 10px;
 }
 
-/* 
-.myButton {
-  
-  box-shadow: 2px 3px 10px -5px #000000;
-  background-color: #163ee0;
-  border-radius: 7px;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: Verdana;
-  font-size: 17px;
-  padding: 16px 31px;
-  text-decoration: none;
-} */
-
 .myButton:hover {
   background-color: #1130ad;
 }
@@ -73,14 +62,6 @@
 .myButton:active {
   position: relative;
   top: 1px;
-}
-
-#header-bot {
-  display: flex;
-  justify-content: right;
-  align-items: flex-end;
-  height: 50%;
-  padding: 0px 15px 6px 0px;
 }
 
 #blocs-introduction {
@@ -129,13 +110,24 @@ h2 {
   font-size: 1.5em;
 }
 
+.centered-title {
+  font-family: 'Great Vibes', cursive;
+  padding: 28px 0 15px 10px;
+  font-size: 2.3em;
+  text-align: center;
+  letter-spacing: 1.2px;
+  /* opacity: 0.75; */
+
+}
+
 h3 {
   font-family: 'Montserrat', sans-serif;
   padding: 10px 0 10px 0px;
   font-size: 1em;
 }
 
-.text {
+.text,
+.icons2-label {
   font-family: 'Montserrat', sans-serif;
   padding: 10px 10px 10px 10px;
   font-size: 1em;
@@ -167,29 +159,31 @@ h3 {
 
 .icons .col i {
   position: absolute;
- 
+
   left: 100px;
   top: 120%;
 
 
   font-size: 1.5em;
- 
+
 
 }
 
-.icons .col:nth-child(3) i{
+.icons .col:nth-child(3) i {
 
   left: 40%;
-  }
-.icons .col:nth-child(4) i{
-
-left: 40%;
 }
 
-.txt{
-margin-bottom: 20px;
+.icons .col:nth-child(4) i {
+
+  left: 40%;
 }
-.txt:hover{
+
+.txt {
+  margin-bottom: 20px;
+}
+
+.txt:hover {
   color: grey
 }
 
@@ -216,6 +210,12 @@ margin-bottom: 20px;
   object-fit: cover;
   width: calc(100% / 3);
   margin-left: 14px;
+}
+
+@media screen and (max-width: 600px) {
+  .carrousel img {
+    width: calc(100% / 1.2);
+  }
 }
 
 .carrousel img:first-child {
