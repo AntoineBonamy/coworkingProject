@@ -15,6 +15,7 @@ function changeButtonMeeting() {
     button.style.transition = "0s";
   }
 }
+//coucou2
 
 function changeButtonCosy() {
   let button = document.querySelector("#cosy-room-button");
