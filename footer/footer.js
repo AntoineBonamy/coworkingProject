@@ -1,8 +1,8 @@
-let arrow = document.querySelector("#arrow-up");
+
 
 window.addEventListener('scroll', () => {
-    console.log(document.documentElement.scrollTop)
-    if (document.documentElement.scrollTop >= 2458) {
+    let arrow = document.querySelector("#arrow-up");
+    if (document.documentElement.scrollTop >= 1700) {
         arrow.style.display = "flex";
     }
     else {
