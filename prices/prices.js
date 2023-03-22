@@ -1,5 +1,3 @@
-//fonctions permettant une modification du texte de chacun des trois boutons lors de la section tarifs et formules (au moment du click) + modification du style de l'icône Tick
-
 function changeButtonMeeting() {
   let button = document.querySelector("#meeting-room-button");
   if (button.innerHTML === "Sélectionner") {
@@ -9,18 +7,14 @@ function changeButtonMeeting() {
     button.style.transition =
       "background-image 0.3s ease-in-out, color 0.5s ease-in-out";
     button.style.backgroundColor = "transparent";
+    button.style.animation = "bounce 0.35s ease infinite alternate";
   } else {
     button.innerHTML = "Sélectionner";
-    button.style.transition =
-      "background-image 0.3s ease-in-out, color 0.5s ease-in-out";
-    button.style.backgroundColor = "transparent";
+    button.style.color = "black";
+    button.style.fontSize = "0.8rem";
+    button.style.transition = "0s";
   }
 }
-
-const buttonMeeting = document.querySelector("#meeting-room-button");
-buttonMeeting.addEventListener("click", function () {
-  changeButtonMeeting("#meeting-room-button");
-});
 
 function changeButtonCosy() {
   let button = document.querySelector("#cosy-room-button");
@@ -33,16 +27,11 @@ function changeButtonCosy() {
     button.style.backgroundColor = "transparent";
   } else {
     button.innerHTML = "Sélectionner";
-    button.style.transition =
-      "background-image 0.3s ease-in-out, color 0.5s ease-in-out";
-    button.style.backgroundColor = "transparent";
+    button.style.color = "black";
+    button.style.fontSize = "0.8rem";
+    button.style.transition = "0s";
   }
 }
-
-const buttonCosy = document.querySelector("#cosy-room-button");
-buttonCosy.addEventListener("click", function () {
-  changeButtonCosy("#cosy-room-button");
-});
 
 function changeButtonPersonnal() {
   let button = document.querySelector("#personnal-room-button");
@@ -55,13 +44,16 @@ function changeButtonPersonnal() {
     button.style.backgroundColor = "white";
   } else {
     button.innerHTML = "Sélectionner";
-    button.style.transition =
-      "background-image 0.3s ease-in-out, color 0.5s ease-in-out";
-    button.style.backgroundColor = "transparent";
+    button.style.color = "black";
+    button.style.fontSize = "0.8rem";
+    button.style.transition = "0s";
   }
 }
 
-const buttonPersonnal = document.querySelector("#personnal-room-button");
-buttonPersonnal.addEventListener("click", function () {
-  changeButtonPersonnal("#personnal-room-button");
-});
+//TODO: fonction de redirection vers la section formulaire une fois que l'utilisateur a sélectionner une formule
+/* function redirect() {
+  let button = document.querySelector ('<i class="fa-solid fa-circle-check"></i>');
+  if (button.innerHTML === '<i class="fa-solid fa-circle-check"></i>') {
+
+  }
+} */
