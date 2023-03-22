@@ -26,6 +26,7 @@
 
 .fa-phone, .fa-envelope {
     margin-right: 8px;
+    color: var(--primary-bg-color);
 }
 
 .fa-brands {
@@ -56,8 +57,12 @@
 }
 #myLinks-footer {
     display: none;
-
 }
+
+#myLinks-footer a:hover {
+    text-decoration: underline;
+}
+
 @media screen and (min-width: 780px) {
     #footer-info h3 {
         font-size: 24px;
@@ -90,16 +95,17 @@
     height: 40px;
     bottom: 50px;
     right: 50px;
-    background-color: rgb(129, 125, 125);
-    opacity: 0.5;
+    background-color: var(--primary-bg-color);
+    opacity: 0.8;
     border-radius: 50%;
 }
 
 #arrow-up a {
-    color: white;
+    color: var(--button-text-color);
 }
 
 #arrow-up a:hover {
     transform: scale(1.5);
     transition: transform 0.5s;
+
 }
