@@ -1,5 +1,5 @@
 .blocs-map {
-    /* zoom: inherit; */
+    
     width: 100%;
 }
 
@@ -17,16 +17,14 @@
 
 .map-info {
     line-height: 2;
-    max-width: 100%;
-    margin: 10px auto;
+    margin: 10px;
     padding: 20px 0px 20px 0px;
     /* background-color: blue; */
 }
 
 .map-info-top {
     display: flex;
-    flex-direction: row;
-    width: 100%;
+
     justify-content: center;
 }
 
@@ -48,6 +46,7 @@
     align-items: center;
 }
 
+
 .map-info-top-text {
     display: flex;
     flex-direction: column;
@@ -60,6 +59,7 @@
     height: 50px;
     align-items: center;
 }
+
 
 .map-info-bot {
     display: flex;
@@ -75,10 +75,14 @@ ul {
 @media screen and (min-width: 900px) {
     .map-section {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        margin: auto auto;
-
+    }
+    .map-container {
+        width: 700px;
+    }
+    .map-info {
+        margin: auto;
     }
 }
 
