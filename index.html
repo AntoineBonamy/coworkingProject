@@ -211,16 +211,24 @@
     </div>
 
     <section class="contact">
-        <div class="contact-form">
-            <form class="contact-form-fields" onsubmit="openPopup(event)">
-                <input type="text" id="name" placeholder="Nom">
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                // https://dashboard.emailjs.com/admin/account
+                emailjs.init('nF9Zn8otIhyHuInKf');
+            })();
+        </script>
+        <div class="contact-form" id="contact-form">
+            <form class="contact-form-fields" onsubmit="sendMail(event)">
+                <input type="text" id="name" placeholder="Nom" required>
                 <input type="text" id="phone_number" placeholder="Téléphone ">
-                <input type="email" id="email" placeholder="E-mail">
-                <textarea type="text" placeholder="Message"></textarea>
+                <input type="email" id="email" placeholder="E-mail" required>
+                <textarea type="text" id="message" placeholder="Message" required></textarea>
                 <button type="submit"> Envoyer</button>
             </form>
         </div>
-        <div class="pop-message">
+        <div class="pop-message" id="pop-message">
             <div id="overlay"></div>
 
             <div class="popup" id="popup">
@@ -229,9 +237,6 @@
                 <button type="button" onclick="closePopup()">OK</button>
             </div>
 </div>
-
-
-
             <script src="contact.js"></script>
     </section>
 
