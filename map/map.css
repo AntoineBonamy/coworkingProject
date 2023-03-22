@@ -75,16 +75,12 @@ ul {
 @media screen and (min-width: 900px) {
     .map-section {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
     .map-container {
-        width: 700px;
+        width: 750px;
     }
-    .map-info {
-        margin: auto;
-    }
-}
 
 .map-list {
     list-style-type: none;
