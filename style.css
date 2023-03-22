@@ -1,112 +1,129 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 :root {
-  --primary-bg-color: #546E7A;
-  --button-text-color: #FFFFFF;
+    --primary-bg-color: #546e7a;
+    --button-text-color: #ffffff;
 }
 
 #bloc-container {
-  display: flex;
-  border: 0px solid black;
-  width: 100%;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: space-between;
+    display: flex;
+    border: 0px solid black;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
 }
 
-
-
 #blocs-header {
-  display: flex;
-  flex-direction: column;
-  background-image: url(./assets/header.jpg);
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 20rem;
-  color: white;
-  font-size: 2em;
-  background-position: center;
-  background-size: cover;
-
+    display: flex;
+    flex-direction: column;
+    background-image: url(./assets/header.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 20rem;
+    color: white;
+    font-size: 2em;
+    background-position: center;
+    background-size: cover;
 }
 
 #header-top {
-  display: flex;
-  flex-direction: row;
-  /* background-color: brown; */
-  height: 50%;
-  width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* background-color: brown; */
+    height: 50%;
+    width: 100%;
 }
 
-
-
 #header-top-cta {
-  position: relative;
-  padding: 10px 0px 0px 10px;
-  width: 50%;
-  /* background-color: rgb(42, 165, 58); */
+    position: relative;
+    padding: 10px 0px 0px 10px;
+    width: 50%;
+    /* background-color: rgb(42, 165, 58); */
 }
 
 #reserver {
-  position: absolute;
-  right: 10px;
+    position: absolute;
+    right: 10px;
 }
 
+/* 
+.myButton {
+  
+  box-shadow: 2px 3px 10px -5px #000000;
+  background-color: #163ee0;
+  border-radius: 7px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Verdana;
+  font-size: 17px;
+  padding: 16px 31px;
+  text-decoration: none;
+} */
+
+
+/* .myrtest {
+  font-size: 90px;
+  margin-left: 800px;
+  font-family: 'Dancing Script', cursive;
+} */
+
+
 .myButton:hover {
-  background-color: #1130ad;
+    background-color: #1130ad;
 }
 
 .myButton:active {
-  position: relative;
-  top: 1px;
+    position: relative;
+    top: 1px;
 }
 
 #blocs-introduction {
-  /* background-color: rgb(167, 146, 61); */
-  width: 100%;
-  /* height: 100px; */
-  display: flex;
-  flex-direction: column;
-  /* background-color: dodgerblue; */
+    /* background-color: rgb(167, 146, 61); */
+    width: 100%;
+    /* height: 100px; */
+    display: flex;
+    flex-direction: column;
+    /* background-color: dodgerblue; */
 }
 
 #blocs-carousel {
-  background-color: rgb(61, 167, 121);
-  width: 100%;
-  height: 100px;
+    background-color: rgb(61, 167, 121);
+    width: 100%;
+    height: 100px;
 }
 
 #blocs-perks {
-  background-color: rgb(61, 141, 167);
-  width: 100%;
-  height: 100px;
+    background-color: rgb(61, 141, 167);
+    width: 100%;
+    height: 100px;
 }
 
 #blocs-contact {
-  background-color: rgb(89, 61, 167);
-  width: 100%;
-  height: 100px;
+    background-color: rgb(89, 61, 167);
+    width: 100%;
+    height: 100px;
 }
 
 #blocs-footer {
-
-  width: 100%;
-  /* height: 40px; */
-  padding-top: 5px;
+    width: 100%;
+    /* height: 40px; */
+    padding-top: 5px;
 }
 
 #blocs-carousel {
-  background-color: rgb(61, 167, 121);
-  width: 100%;
-  height: 100px;
+    background-color: rgb(61, 167, 121);
+    width: 100%;
+    height: 100px;
 }
 
 /* h2 {
@@ -116,130 +133,116 @@ html {
 } */
 
 .centered-title {
-  font-family: 'Great Vibes', cursive;
-  padding: 28px 0 15px 10px;
-  font-size: 2.3em;
-  text-align: center;
-  letter-spacing: 1.2px;
-  /* opacity: 0.75; */
-
+    font-family: "Great Vibes", cursive;
+    padding: 28px 0 15px 10px;
+    font-size: 2.3em;
+    text-align: center;
+    letter-spacing: 1.2px;
+    /* opacity: 0.75; */
 }
 
 .text,
 .title {
-  font-family: 'Montserrat', sans-serif;
-  padding: 30px 15% 20px 15%;
-  font-size: 1.2em;
+    font-family: "Montserrat", sans-serif;
+    padding: 30px 15% 20px 15%;
+    font-size: 1.2em;
 }
 
 @media screen and (max-width: 700px) {
-
-  .text,
-  .title {
-    padding: 20px 10% 10px 10%;
-    font-size: 1em;
-  }
+    .text,
+    .title {
+        padding: 20px 10% 10px 10%;
+        font-size: 1em;
+    }
 }
 
 h3 {
-  font-family: 'Montserrat', sans-serif;
-  padding: 10px 0 10px 0px;
-  font-size: 1em;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px 0 10px 0px;
+    font-size: 1em;
 }
 
 .icons2-label {
-  font-family: 'Montserrat', sans-serif;
-  padding: 10px 10px 10px 10px;
-  font-size: 1em;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px 10px 10px 10px;
+    font-size: 1em;
 }
 
 .icons {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
 
-  margin-top: 30px;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 40px;
-
-
-  /* flex-wrap: wrap; */
-
+    /* flex-wrap: wrap; */
 }
 
 .icons .col {
-  padding: 0 65px;
-  text-align: center;
-  font-size: 1.3em;
-  cursor: pointer;
-  position: relative;
-
-
+    padding: 0 65px;
+    text-align: center;
+    font-size: 1.3em;
+    cursor: pointer;
+    position: relative;
 }
 
-
 .icons .col i {
-  position: absolute;
+    position: absolute;
 
-  left: 100px;
-  top: 120%;
+    left: 100px;
+    top: 120%;
 
-
-  font-size: 1.5em;
-
-
+    font-size: 1.5em;
 }
 
 .icons .col:nth-child(3) i {
-
-  left: 40%;
+    left: 40%;
 }
 
 .icons .col:nth-child(4) i {
-
-  left: 40%;
+    left: 40%;
 }
 
 .txt {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .txt:hover {
-  color: grey
+    color: grey;
 }
 
-
 .icons .col div {
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .wrapper {
-  margin-top: 30px;
-  width: 100%;
-  position: relative;
+    margin-top: 30px;
+    width: 100%;
+    position: relative;
 }
 
 .wrapper .carrousel {
-  font-size: 0px;
-  white-space: nowrap;
-  cursor: pointer;
-  overflow: hidden;
+    font-size: 0px;
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
 }
 
 .carrousel img {
-  height: 300px;
-  object-fit: cover;
-  width: calc(100% / 3);
-  margin-left: 14px;
+    height: 300px;
+    object-fit: cover;
+    width: calc(100% / 3);
+    margin-left: 14px;
 }
 
 @media screen and (max-width: 600px) {
-  .carrousel img {
-    width: calc(100% / 1.2);
-  }
+    .carrousel img {
+        width: calc(100% / 1.2);
+    }
 }
 
 .carrousel img:first-child {
-  margin-left: 0px;
+    margin-left: 0px;
 }
 
 /* .wrapper i {
@@ -256,9 +259,114 @@ h3 {
 } */
 
 .wrapper i:first-child {
-  left: -23px;
+    left: -23px;
 }
 
 .wrapper i:last-child {
-  right: -23px;
+    right: -23px;
 }
+
+/*  */
+
+.moncarrou {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+section {
+  position: relative;
+  /* height: 1450px; */
+  /* width: 1075px;
+  display: flex; */
+  align-items: center;
+}
+
+.swiper {
+  width: 100%;
+  /* width: 950px; */
+}
+
+.card {
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  height: 4200px;
+  margin: 20px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 60px;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  height: 1%;
+  width: 100%;
+  background: white;
+  border-radius: 20px 20px 0 0;
+}
+
+
+.card .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  z-index: 100;
+
+}
+
+section .card .image {
+    /* height: 290px; */
+    height: 470px;
+    width: 300px;
+    border-radius: 20%;
+    padding: 3px;
+
+
+section .card .image {
+  /* height: 290px; */
+  height: 470px;
+  width: 100%;
+  border-radius: 20%;
+  padding: 3px;
+
+  margin-top: 30px;
+}
+
+section .card .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5%;
+
+}
+
+.swiper-pagination {
+  position: absolute;
+  top: 150px;
+}
+
+.swiper-button-prev {
+  margin-left: -80px;
+  opacity: 1;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-next {
+  margin-right: -80px;
+
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+
+  opacity: 1;
+  color: black;
+  transition: all 0.3s ease;
+}
+
