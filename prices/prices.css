@@ -51,9 +51,8 @@ button {
   border: none;
   padding: 12px 15px;
   border-radius: 24px;
-  font-size: 12px;
   font-size: 0.8rem;
-  letter-spacing: 2px;
+  letter-spacing: 2.5px;
   margin-top: 7px;
   cursor: pointer;
   transition: transform 0.5s;
