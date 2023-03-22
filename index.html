@@ -52,7 +52,7 @@
 
                 </div>
                 <div id="header-top-cta">
-                    <button type="button" id="reserver">Réserver</button>
+                    <a href="#prices"><button type="button" id="reserver">Réserver</button></a>
                 </div>
             </div>
             <div id="header-bot">J & A</div>
@@ -117,7 +117,9 @@
 
     <!-- section tarif-->
     <div id="blocs-prices">
-        <h2><a name="prices">Tarifs et formules</a></h2>
+        <div class="title">
+            <h2><a name="prices">Tarifs et formules</a></h2>
+        </div>
         <section id="prices-and-formula">
 
             <div id="prices-meeting-room">
@@ -140,6 +142,7 @@
                     <p>(2 places)</p>
                     <p>Tarif journalier : 50 €</p>
                     <button id="cosy-room-button" type="button" onclick="changeButtonCosy()">Sélectionner</button>
+
                 </div>
                 <div id="prices-cosy-room-picture">
                     <img src="assets/cosy-room.jpg" alt="cosy room picture" />
@@ -161,7 +164,9 @@
     </div>
     <!-- section map -->
     <div id="blocs-map">
-        <h2><a name="map">Retrouvez nous</a></h2>
+        <div class="title">
+            <h2><a name="map">Retrouvez nous</a></h2>
+        </div>
         <section class="map-section">
             <div class="map-container">
                 <iframe id="map-interface"
@@ -172,24 +177,24 @@
             <div class="map-info">
                 <div class="map-info-top">
                     <div class="map-info-top-icons">
-                        <div>
+                        <div class="map-info-icon">
                             <i class="fa-solid fa-location-dot"></i>
                         </div>
-                        <div>
+                        <div class="map-info-icon">
                             <i class="fa-solid fa-car"></i>
                         </div>
-                        <div>
+                        <div class="map-info-icon">
                             <i class="fa-solid fa-bicycle"></i>
                         </div>
-                        <div>
+                        <div class="map-info-icon">
                             <i class="fa-solid fa-bus"></i>
                         </div>
                     </div>
                     <div class="map-info-top-text">
-                        <div>4 rue Baron 44000 Nantes</div>
-                        <div>Parking à proximité</div>
-                        <div>Accès vélo</div>
-                        <div>Bus & Tram</div>
+                        <div class="map-info-text">4 rue Baron 44000 Nantes</div>
+                        <div class="map-info-text">Parking à proximité</div>
+                        <div class="map-info-text">Accès vélo</div>
+                        <div class="map-info-text">Bus & Tram</div>
                     </div>
                 </div>
                 <div class="map-info-bot">
@@ -201,23 +206,36 @@
     </div>
 
     <!-- section contact  -->
-    <h2>Nous contacter</h2>
+    <div class="title">
+        <h2>Nous contacter</h2>
+    </div>
     <section class="contact">
         <div class="form-name">
 
         </div>
 
         <div class="contact-form">
-            <form class="contact-form-fields">
-                <input type="text" id="name" placeholder="Votre Nom" required>
-                <input type="text" id="phone_number" placeholder="Votre Téléphone ">
-                <input type="email" id="email" placeholder="Votre e-mail">
-                <textarea type="text" placeholder="Votre Message"></textarea>
+            <form class="contact-form-fields" onsubmit="openPopup(event)">
+                <input type="text" id="name" placeholder="Nom" >
+                <input type="text" id="phone_number" placeholder="Téléphone ">
+                <input type="email" id="email" placeholder="E-mail">
+                <textarea type="text" placeholder="Message"></textarea>
                 <button type="submit"> Envoyer</button>
             </form>
-        </div>
-    </section>
 
+            <div id="overlay"></div>
+
+            <div class="popup" id="popup">
+                <h2>Merci !</h2>
+                <p>Nous allons vous répondre dans les meilleurs délais.</p>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
+        
+
+        <script src="contact.js"></script>
+</section>
+
+   
 
     <!-- section footer -->
     <div id="blocs-footer">
@@ -225,13 +243,33 @@
             <section class="footer-contact">
                 <h3><a name="contact">Contact</a></h3>
                 <ul>
-                    <li>Jessica : 03.55.69.26.26</li>
-                    <li>jessica.coworking@gmail.fr</li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        Jessica : 03.55.69.26.26
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        jessica.coworking@gmail.fr
+                    </li>
                     <br>
-                    <li>Arnaud : 05.55.55.55.55</li>
-                    <li>arnaud.coworking@gmail.fr</li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        Arnaud : 05.55.55.55.55
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        arnaud.coworking@gmail.fr
+                    </li>
                 </ul>
             </section>
+            <div id="myLinks-footer">
+                <a href="#blocs-header"><h3>Menu</h3></a>
+                <a href="#intro">Nos locaux</a>
+                <a href="#perks">Les avantages</a>
+                <a href="#prices">Tarifs</a>
+                <a href="#map">Nous retrouver</a>
+                <a href="#contact">Contact</a>
+            </div>
             <section class="footer-adress">
                 <h3>Adresse</h3>
                 <ul>
@@ -256,7 +294,12 @@
                 <i class="fa-brands fa-linkedin"></i>
             </a>
         </section>
-
+        <div id="arrow-up">
+            <a href="#blocs-header">
+                <i class="fa-solid fa-arrow-up">
+                </i>
+            </a>
+        </div>
 
     </div>
     <script type="text/javascript" src="footer/footer.js"></script>

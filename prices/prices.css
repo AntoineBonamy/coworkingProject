@@ -2,6 +2,7 @@
 #prices-and-formula {
   padding-left: 15px;
   padding-right: 15px;
+
 }
 
 /*Style section div carte */
@@ -57,6 +58,8 @@ button {
   margin-top: 7px;
   cursor: pointer;
   transition: transform 0.5s;
+  background-color: var(--primary-bg-color);
+  color: var(--button-text-color);
 }
 
 button:hover {
