@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project #1</title>
+    <title>J&A Coworking</title>
     <link rel="shortcut icon" type="image/jpg" href="favicon.png" />
     <!-- ici charger les fichiers de tous le mondes ex: contact.css contact.js -->
     <script type="text/javascript" src="header/header.js"></script>
@@ -67,8 +67,8 @@
             <h2><a name="intro">Nos locaux</a></h2>
         </div>
         <div class="text">
-            <p>Bonjour nous sommes Jessica et Arnaud et nous venons d’ouvrir notre espace de coworking Sharing is
-                caring.
+            <p>Bonjour nous sommes Jessica et Arnaud et nous venons d’ouvrir notre espace de coworking " Sharing is
+                caring".
                 <br> Notre état d’esprit est vraiment orienté vers le bien être au travail et le partage.
                 <br> Nous voulons que les indépendants, personnes en recherche d’emploi se sentent bien ici et puissent
                 échanger afin de créer un
@@ -326,33 +326,37 @@
     <div class="title">
         <h2>Nous contacter</h2>
     </div>
+
     <section class="contact">
-        <div class="form-name">
 
-        </div>
-
-        <div class="contact-form">
-            <form class="contact-form-fields" onsubmit="openPopup(event)">
-                <input type="text" id="name" placeholder="Nom">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                // https://dashboard.emailjs.com/admin/account
+                emailjs.init('nF9Zn8otIhyHuInKf');
+            })();
+        </script>
+        <div class="contact-form" id="contact-form">
+            <form class="contact-form-fields" onsubmit="sendMail(event)">
+                <input type="text" id="name" placeholder="Nom" required>
                 <input type="text" id="phone_number" placeholder="Téléphone ">
-                <input type="email" id="email" placeholder="E-mail">
-                <textarea type="text" placeholder="Message"></textarea>
+                <input type="email" id="email" placeholder="E-mail" required>
+                <textarea type="text" id="message" placeholder="Message" required></textarea>
                 <button type="submit"> Envoyer</button>
             </form>
         </div>
-    </section>
 
+        <div class="pop-message" id="pop-message">
+            <div id="overlay"></div>
 
-    <div id="overlay"></div>
+            <div class="popup" id="popup">
+                <h2>Merci !</h2>
+                <p>Nous allons vous répondre dans les meilleurs délais.</p>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
+</div>
+            <script src="contact.js"></script>
 
-    <div class="popup" id="popup">
-        <h2>Merci !</h2>
-        <p>Nous allons vous répondre dans les meilleurs délais.</p>
-        <button type="button" onclick="closePopup()">OK</button>
-    </div>
-
-
-    <script src="contact.js"></script>
     </section>
 
 

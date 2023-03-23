@@ -2,11 +2,21 @@
 
 window.addEventListener('scroll', () => {
     let arrow = document.querySelector("#arrow-up");
-    if (document.documentElement.scrollTop >= 1700) {
-        arrow.style.display = "flex";
+    if (screen.width < 720) {
+        if (document.documentElement.scrollTop >= 3000) {
+            arrow.style.display = "flex";
+        }
+        else {
+            arrow.style.display = "none";
+        }
     }
     else {
-        arrow.style.display = "none";
+        if (document.documentElement.scrollTop >= 1700) {
+            arrow.style.display = "flex";
+        }
+        else {
+            arrow.style.display = "none";
+        }
     }
   });
 

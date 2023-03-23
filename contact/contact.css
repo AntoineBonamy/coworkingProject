@@ -46,8 +46,9 @@
 
 #overlay {
     position: absolute;
+    margin-top: -490px;
     width: 100%;
-    height: 89%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     pointer-events: none;
     display: none;
@@ -67,9 +68,13 @@
     transition: 200ms ease-in-out;
 }
 
-.open-popup {
+.open-popup .popup {
+    margin-top: -260px;
     visibility: visible;
     transform: translate(-50%, -50%) scale(1);
+}
+.open-popup #overlay {
+    display: block;
 }
 
 @media screen and (min-width: 400px) {
@@ -79,5 +84,17 @@
 
     .contact-form-fields {
         padding: 60px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #overlay {
+        position: absolute;
+        margin-top: -410px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        pointer-events: none;
+        display: none;
     }
 }
