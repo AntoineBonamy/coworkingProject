@@ -7,12 +7,13 @@ function changeButtonMeeting() {
     button.style.transition =
       "background-image 0.3s ease-in-out, color 0.5s ease-in-out";
     button.style.backgroundColor = "transparent";
-    button.style.animation = "bounce 0.35s ease infinite alternate";
   } else {
     button.innerHTML = "Sélectionner";
     button.style.color = "black";
     button.style.fontSize = "0.8rem";
     button.style.transition = "0s";
+    button.style.backgroundColor = "var(--primary-bg-color)";
+    button.style.color = "white";
   }
 }
 
@@ -30,6 +31,8 @@ function changeButtonCosy() {
     button.style.color = "black";
     button.style.fontSize = "0.8rem";
     button.style.transition = "0s";
+    button.style.backgroundColor = "var(--primary-bg-color)";
+    button.style.color = "white";
   }
 }
 
@@ -47,13 +50,7 @@ function changeButtonPersonnal() {
     button.style.color = "black";
     button.style.fontSize = "0.8rem";
     button.style.transition = "0s";
+    button.style.backgroundColor = "var(--primary-bg-color)";
+    button.style.color = "white";
   }
 }
-
-//TODO: fonction de redirection vers la section formulaire une fois que l'utilisateur a sélectionner une formule
-/* function redirect() {
-  let button = document.querySelector ('<i class="fa-solid fa-circle-check"></i>');
-  if (button.innerHTML === '<i class="fa-solid fa-circle-check"></i>') {
-
-  }
-} */
