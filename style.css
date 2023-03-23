@@ -377,15 +377,6 @@ div .swiper-button-prev::after {
   align-items: ;
 }
 
-
-/* @media screen and (max-width: 700px) {
-  .swiper-button-next {
-    font-size: 4em;
-
-  }
-
-} */
-
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
 
