@@ -60,31 +60,6 @@ html {
   right: 10px;
 }
 
-
-/* 
-.myButton {
-  
-  box-shadow: 2px 3px 10px -5px #000000;
-  background-color: #163ee0;
-  border-radius: 7px;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: Verdana;
-  font-size: 17px;
-  padding: 16px 31px;
-  text-decoration: none;
-} */
-
-.myrtest{
-  font-size: 90px;
-  margin-left: 800px;
-  font-family: 'Dancing Script', cursive;
-}
-
-
-
-
 .myButton:hover {
   background-color: #1130ad;
 }
@@ -133,12 +108,6 @@ html {
   width: 100%;
   height: 100px;
 }
-
-/* h2 {
-  font-family: 'Montserrat', sans-serif;
-  padding: 20px 0 15px 10px;
-  font-size: 1.5em;
-} */
 
 .centered-title {
   font-family: 'Great Vibes', cursive;
@@ -290,31 +259,32 @@ h3 {
 
 /*  */
 
-.moncarrou{
+.moncarrou {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  width: 100%;
 }
 
-section{
-  position: relative;  
+section {
+  position: relative;
   /* height: 1450px; */
   width: 80%;
   display: flex;
   align-items: center;
 }
 
-.swiper{
-  width: 90%;
+.swiper {
+  width: 80%;
   /* width: 950px; */
 }
+
 /* Katia tintin */
 
-.card{
+.card {
   position: relative;
   background: #fff;
-  border-radius: 20px;
+  border-radius: 4px;
   height: 4200px;
   /* margin: 20px 0; */
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -331,7 +301,7 @@ section{
 } */
 
 
-.card .card-content{
+.card .card-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -341,52 +311,85 @@ section{
 }
 
 
-section .card .image{
-  /* height: 290px; */
-  /* height: 470px;
-  width: 300px; */
-
-  height: 100%;
+section .card .image {
+  height: 400px;
   width: 100%;
-  border-radius: 20%;
-  /* padding: 3px; */
-
-  margin-top: 30px;
+  border-radius: 4px;
+  transition: all 0.35s ease;
 }
 
-section .card .image img{
+@media screen and (max-width: 700px) {
+
+  section .card .image {
+    height: 200px;
+  }
+}
+
+section .card .image img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border-radius: 5%;
+  border-radius: 4px;
 
 }
 
-.swiper-pagination{
+.swiper-pagination {
   position: absolute;
   top: 150px;
 }
 
- .swiper-button-prev{
-  margin-left: -30px;
+.swiper-button-prev {
   opacity: 1;
   color: black;
   transition: all 0.3s ease;
-  font-size: 7em;
+  transform: translate(-50%, -50%);
+  font-size: 3px;
+  width: 100%;
 }
 
-.swiper-button-next{
-  margin-right: -30px;
-  font-size: 7em;
-
+.swiper-button-next {
+  margin-right: -40px;
+  transform: translate(-50%, -50%);
+  /* background-color: #fc0606; */
 }
-.swiper-button-next:hover, .swiper-button-prev:hover{
-  
+
+div .swiper-button-next::after,
+.swiper-rtl,
+div .swiper-button-prev::after {
+  font-size: 40px;
+  transition: all 0.6s;
+  width: 500px;
+}
+
+@media screen and (max-width: 700px) {
+
+  div .swiper-button-next::after,
+  .swiper-rtl,
+  div .swiper-button-prev::after {
+    font-size: 25px;
+  }
+}
+
+.carrousel-section {
+  width: 100%;
+  background-color: red;
+  display: flex;
+  align-items: ;
+}
+
+
+/* @media screen and (max-width: 700px) {
+  .swiper-button-next {
+    font-size: 4em;
+
+  }
+
+} */
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+
   opacity: 1;
   color: black;
   transition: all 0.3s ease;
 }
-
-
-
-
