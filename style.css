@@ -119,21 +119,37 @@ html {
 
 }
 
-.text,
 .title {
     font-family: 'Montserrat', sans-serif;
-    padding: 30px 15% 20px 15%;
+    padding: 30px 15% 40px 15%;
     font-size: 1.2em;
 }
 
 @media screen and (max-width: 700px) {
 
-    .text,
+
     .title {
-        padding: 20px 10% 10px 10%;
+        padding: 20px 10% 30px 10%;
         font-size: 1em;
     }
 }
+
+.text {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px 15% 40px 15%;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 700px) {
+
+    .text {
+        padding: 0px 10% 30px 10%;
+        font-size: 1em;
+    }
+}
+
+
+
 
 h3 {
     font-family: 'Montserrat', sans-serif;
