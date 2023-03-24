@@ -111,11 +111,13 @@ html {
 
 .centered-title {
     font-family: 'Great Vibes', cursive;
-    padding: 28px 0 15px 10px;
+    padding: 10px 0 20px 10px;
     font-size: 2.3em;
     text-align: center;
     letter-spacing: 1.2px;
     /* opacity: 0.75; */
+    /* background-color: #1130ad; */
+    margin: 0 0 10px 0;
 
 }
 
