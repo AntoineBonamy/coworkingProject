@@ -9,8 +9,8 @@ html {
 }
 
 :root {
-    --primary-bg-color: #546e7a;
-    --button-text-color: #ffffff;
+    --primary-bg-color: #546E7A;
+    --button-text-color: #FFFFFF;
 }
 
 #bloc-container {
@@ -21,6 +21,8 @@ html {
     align-items: flex-end;
     justify-content: space-between;
 }
+
+
 
 #blocs-header {
     display: flex;
@@ -33,6 +35,7 @@ html {
     font-size: 2em;
     background-position: center;
     background-size: cover;
+
 }
 
 #header-top {
@@ -42,6 +45,8 @@ html {
     height: 50%;
     width: 100%;
 }
+
+
 
 #header-top-cta {
     position: relative;
@@ -92,6 +97,7 @@ html {
 }
 
 #blocs-footer {
+
     width: 100%;
     /* height: 40px; */
     padding-top: 5px;
@@ -104,17 +110,18 @@ html {
 }
 
 .centered-title {
-    font-family: "Great Vibes", cursive;
+    font-family: 'Great Vibes', cursive;
     padding: 28px 0 15px 10px;
     font-size: 2.3em;
     text-align: center;
     letter-spacing: 1.2px;
     /* opacity: 0.75; */
+
 }
 
 .text,
 .title {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding: 30px 15% 20px 15%;
     font-size: 1.2em;
 }
@@ -129,25 +136,28 @@ html {
 }
 
 h3 {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding: 10px 0 10px 0px;
     font-size: 1em;
 }
 
 .icons2-label {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding: 10px 10px 10px 10px;
     font-size: 1em;
 }
 
 .icons {
+
     margin-top: 30px;
     width: 100%;
     display: flex;
     justify-content: space-around;
     margin-bottom: 40px;
 
+
     /* flex-wrap: wrap; */
+
 }
 
 .icons .col {
@@ -156,7 +166,10 @@ h3 {
     font-size: 1.3em;
     cursor: pointer;
     position: relative;
+
+
 }
+
 
 .icons .col i {
     position: absolute;
@@ -164,14 +177,19 @@ h3 {
     left: 100px;
     top: 120%;
 
+
     font-size: 1.5em;
+
+
 }
 
 .icons .col:nth-child(3) i {
+
     left: 40%;
 }
 
 .icons .col:nth-child(4) i {
+
     left: 40%;
 }
 
@@ -180,8 +198,9 @@ h3 {
 }
 
 .txt:hover {
-    color: grey;
+    color: grey
 }
+
 
 .icons .col div {
     font-family: Arial, Helvetica, sans-serif;
@@ -267,6 +286,8 @@ align-items: center;
     width: 80%;
     /* width: 950px; */
 }
+
+/* Katia tintin */
 
 .card {
     position: relative;
@@ -370,7 +391,6 @@ div .swiper-button-prev::after {
     width: 100%;
     background-color: red;
     display: flex;
-    align-items: ;
 }
 
 .swiper-button-next:hover,
