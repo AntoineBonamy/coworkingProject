@@ -4,7 +4,9 @@
 
     /* background-color: coral; */
     width: 100%;
-    height: 200px;
+    height: 150px;
+    /* padding-bottom: 30px; */
+    margin-bottom: 50px;
 }
 
 .icons2-label-container {
@@ -14,10 +16,9 @@
     width: 100%;
     height: 50%;
     /* background-color: rgb(126, 243, 1); */
-    flex-wrap: ;
     align-items: center;
     text-align: center;
-
+    /* padding-bottom: 50px; */
 }
 
 .icons2-label {
@@ -33,6 +34,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: flex-end;
     width: 100%;
     height: 50%;
     font-size: 1.5em;
