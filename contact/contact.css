@@ -73,6 +73,7 @@
     visibility: visible;
     transform: translate(-50%, -50%) scale(1);
 }
+
 .open-popup #overlay {
     display: block;
 }
@@ -97,4 +98,16 @@
         pointer-events: none;
         display: none;
     }
+}
+
+.popup h2 {
+    margin: 20px 0 20px 0;
+}
+
+.popup p {
+    margin: 20px 0 20px 0;
+}
+
+.popup button {
+    width: 150px;
 }
