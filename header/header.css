@@ -2,41 +2,14 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* .mobile-container {
-    max-width: 480px;
-    margin: auto;
-    background-color: #555;
-    height: 500px;
-    color: white;
-    border-radius: 10px;
-  } */
-
-/* #blocs-introduction {
-    padding: 10px 15% 0 15%;
-    font-size: 1.2em;
-}
-
-@media screen and (max-width: 700px) {
-    #blocs-introduction {
-        padding: 0 10% 0 10%;
-        font-size: 1em;
-    }
-} */
-
-
-
 .icon-burger {
     display: block;
     color: white;
-    /* background-color: green; */
-    padding: 15px 0 0 15px;
-    /* width: 300px;
-    height: 300px; */
+    padding: 15px 0 0 25px;
 }
 
 .topnav {
     overflow: hidden;
-    /* background-color: yellow; */
     padding: 0 0 0 3px;
     position: relative;
     width: 250px;
@@ -50,12 +23,11 @@ body {
 
 .topnav #myLinks {
     display: none;
-    /* padding-bottom: 30px; */
 }
 
 .topnav a {
     color: white;
-    padding: 5px 0px 5px 12px;
+    padding: 5px 0px 5px 20px;
     text-decoration: none;
     font-size: 1em;
     display: block;
@@ -80,7 +52,9 @@ body {
     background-color: #ddd;
     color: black;
     text-shadow: none;
-    opacity: 0.8;
+    border-radius: 4px;
+    opacity: 0.9;
+  
 }
 
 .active {
@@ -96,7 +70,7 @@ body {
 
 #header-bot {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     align-items: flex-end;
     height: 50%;
     padding: 0px 15px 6px 0px;

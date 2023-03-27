@@ -12,7 +12,6 @@ html {
     --primary-bg-color: #546E7A;
     --button-text-color: #FFFFFF;
 }
-
 #bloc-container {
     display: flex;
     border: 0px solid black;
@@ -41,24 +40,26 @@ html {
 #header-top {
     display: flex;
     flex-direction: row;
-    /* background-color: brown; */
     height: 50%;
     width: 100%;
 }
 
-
+.intro {
+    line-height: 24px;
+}
 
 #header-top-cta {
     position: relative;
     padding: 10px 0px 0px 10px;
     width: 50%;
-    /* background-color: rgb(42, 165, 58); */
 }
 
 #reserver {
     position: absolute;
-    right: 10px;
+    right: 15px;
+    font-size: 15px;
 }
+
 
 .myButton:hover {
     background-color: #1130ad;
@@ -70,12 +71,9 @@ html {
 }
 
 #blocs-introduction {
-    /* background-color: rgb(167, 146, 61); */
     width: 100%;
-    /* height: 100px; */
     display: flex;
     flex-direction: column;
-    /* background-color: dodgerblue; */
 }
 
 #blocs-carousel {
@@ -115,8 +113,6 @@ html {
     font-size: 2.3em;
     text-align: center;
     letter-spacing: 1.2px;
-    /* opacity: 0.75; */
-    /* background-color: #1130ad; */
     margin: 0 0 10px 0;
 
 }
@@ -172,9 +168,6 @@ h3 {
     display: flex;
     justify-content: space-around;
     margin-bottom: 40px;
-
-
-    /* flex-wrap: wrap; */
 
 }
 
@@ -254,19 +247,6 @@ h3 {
     margin-left: 0px;
 }
 
-/* .wrapper i {
-  height: 46px;
-  width: 46px;
-  text-align: center;
-  line-height: 46px;
-  background: #fff;
-  border-radius: 50%;
-  font-size: 1.2rem;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-} */
-
 .wrapper i:first-child {
     left: -23px;
 }
@@ -275,7 +255,6 @@ h3 {
     right: -23px;
 }
 
-/*  */
 
 .moncarrou {
 
@@ -287,44 +266,23 @@ h3 {
 
 .sectionk {
     position: relative;
-    /* height: 1450px; */
     width: 80%;
     display: flex;
 }
 
-/* section {
-    position: relative;
-    height: 1450px;
-     width: 1075px;
-  display: flex; 
-align-items: center;
-} */
-
 .swiper {
     width: 80%;
-    /* width: 950px; */
 }
-
-/* Katia tintin */
 
 .card {
     position: relative;
     background: #fff;
     border-radius: 4px;
     height: 4200px;
-    /* margin: 20px 0; */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 60px;
 }
 
-/* .card::before{
-    content: "";
-    position: absolute;
-    height: 1%;
-    width: 100%;
-    background: white;
-    border-radius: 20px 20px 0 0;
-  } */
 
 
 .card .card-content {
@@ -336,15 +294,6 @@ align-items: center;
     z-index: 100;
 
 }
-
-/* À vérifier si on garde ou pas 24032023 1032
-section .card .image {
-    height: 290px;
-    height: 470px;
-    width: 300px;
-    border-radius: 20%;
-    padding: 3px;
-} */
 
 section .card .image {
     height: 400px;
@@ -385,7 +334,6 @@ section .card .image img {
 .swiper-button-next {
     margin-right: -40px;
     transform: translate(-50%, -50%);
-    /* background-color: #fc0606; */
 }
 
 div .swiper-button-next::after,
@@ -417,5 +365,5 @@ div .swiper-button-prev::after {
 
     opacity: 1;
     color: black;
-    transition: all 0.3s ease;
+    transition: all 0.6s ease;
 }

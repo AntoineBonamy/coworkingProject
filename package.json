@@ -4,6 +4,7 @@
   "description": "Our first project in common at the Wild Code School",
   "main": "script.js",
   "scripts": {
+    "deploy":  "vercel --prod",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Elindanova/coworkingProject/issues"
   },
-  "homepage": "https://github.com/Elindanova/coworkingProject#readme"
+  "homepage": "https://github.com/Elindanova/coworkingProject#readme",
+  "devDependencies": {
+    "vercel": "^28.18.1"
+  }
 }
